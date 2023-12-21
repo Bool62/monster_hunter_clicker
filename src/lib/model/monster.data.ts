@@ -10,6 +10,8 @@ import {
 import { Rank } from './rank.model';
 
 export namespace MonsterDATA {
+
+
   export const MONSTER_003_KELBI: Monster = new Monster(
     3,
     'Kelbi',
@@ -46,4 +48,9 @@ export namespace MonsterDATA {
     Rank.LOW,
     ''
   );
+
+
+
+  export const MONSTER_ALL : Monster[] = [MONSTER_003_KELBI];
+
 }

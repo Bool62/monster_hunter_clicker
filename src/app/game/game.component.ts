@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { Monster } from '../../lib/model/monster.model';
 import { ClickerGameActions } from '../store/clickerGame.action';
 import { ClickerGameState } from '../store/clickerGame.state';
+import { MonsterAction } from '../store/monster.action';
 
 @Component({
   selector: 'app-game',
@@ -22,7 +23,9 @@ export class GameComponent implements OnInit {
 
   constructor(private readonly store: Store) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.store.dispatch(new MonsterAction.LoadInit());
+  }
 
   stopClick() {
     clearInterval(this.interval);

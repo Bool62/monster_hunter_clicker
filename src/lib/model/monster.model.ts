@@ -173,10 +173,8 @@ export class Monster {
       //Get chance to obtain it
       if (possibleRewards && possibleRewards.length > 0) {
         possibleRewards.forEach((possibleReward) => {
-          console.error(possibleReward);
           for (let i = 0; i < possibleReward.getQuantity(); i++) {
             const result = Math.floor(Math.random() * (100 - 0 + 1) + 0);
-            console.log(result);
             if (result <= possibleReward.getChance()) {
               rewards.push(reward.getItem());
             }
@@ -186,5 +184,9 @@ export class Monster {
     });
 
     return rewards;
+  }
+
+  getId(): number {
+    return this.id;
   }
 }

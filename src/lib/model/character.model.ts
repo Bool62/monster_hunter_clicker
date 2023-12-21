@@ -5,7 +5,7 @@ import { Weapon } from './weapon.model';
 export class Character {
   private attackPower: number = 1;
   private totalAttackPower: number = 1;
-  private inventoryItem: ItemInventory[] = [];
+  private inventoryItem: Map<number,ItemInventory> = new Map();
   private equipedArmor: string[] = [];
   private equipedWeapon!: Weapon;
   private inventoryArmor: Armor[] = [];
@@ -13,5 +13,9 @@ export class Character {
 
   getTotalAttackPower(): number {
     return this.totalAttackPower;
+  }
+
+  getInventoryItem(): Map<number,ItemInventory> {
+    return this.inventoryItem;
   }
 }

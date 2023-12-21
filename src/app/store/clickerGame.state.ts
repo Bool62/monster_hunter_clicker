@@ -1,11 +1,14 @@
 // character.state.ts
 
 import { Injectable } from '@angular/core';
-import { State, Action, StateContext, Selector } from '@ngxs/store';
+import { State, Action, StateContext, Selector, Store } from '@ngxs/store';
 import { Character } from '../../lib/model/character.model';
 import { MonsterDATA } from '../../lib/model/monster.data';
 import { Monster } from '../../lib/model/monster.model';
 import { ClickerGameActions } from './clickerGame.action';
+import { MonsterState } from './monster.state';
+import { Rank } from '../../lib/model/rank.model';
+import { ItemInventory } from '../../lib/model/item.model';
 
 export interface ClickerGameStateModel {
   character: Character;
@@ -23,6 +26,10 @@ export interface ClickerGameStateModel {
 })
 @Injectable()
 export class ClickerGameState {
+
+
+  constructor(private readonly store:Store) {}
+
   // Définissez les actions pour mettre à jour l'état du personnage
   @Action(ClickerGameActions.Click)
   click(
@@ -36,10 +43,20 @@ export class ClickerGameState {
     if (state.currentMonster) {
       state.currentMonster.takeDamage(damage);
       const rewards = state?.currentMonster.generateReward();
-      console.log(rewards);
       if (!state.currentMonster.isAlive()) {
         const rewards = state.currentMonster.generateReward();
-        console.log(rewards);
+        if(rewards && rewards.length > 0) {
+          const inventoryItem = state.character.getInventoryItem();
+          rewards.forEach((reward) => {
+            if(inventoryItem.get(reward.getId())) {
+
+            }
+            else {
+              // TODO création inventory
+              //inventoryItem.set(reward.getId(),new ItemInventory());
+            }
+          })
+        }
         // Le monstre actuel est vaincu, passer au suivant
         ctx.patchState({
           monstersKilled: state.monstersKilled + 1,
@@ -63,7 +80,9 @@ export class ClickerGameState {
     return state.currentMonster;
   }
 
-  private spawnNextMonster(): Monster {
-    return MonsterDATA.MONSTER_003_KELBI;
+  private spawnNextMonster(): Monster|undefined {
+    const monster = this.store.selectSnapshot(MonsterState.monsterById(3));
+    monster?.updateRankMonster(Rank.LOW)
+    return monster;
   }
 }

@@ -19,9 +19,26 @@ export class Item {
     this.description = description;
     this.rarity = rarity;
     this.value = value;
+    this.icon = icon;
+  }
+
+  getId(): number {
+    return this.id;
   }
 }
 
 export class ItemInventory extends Item {
   private quantity: number = 0;
+
+  constructor(id: number,
+    name: string,
+    description: string,
+    rarity: number,
+    value: number,
+    icon: string,quantity: number) {
+    super(id,name,description,rarity,value,icon);
+    this.quantity = quantity;
+    }
+
+  
 }

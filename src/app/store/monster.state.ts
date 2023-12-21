@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, numberAttribute } from '@angular/core';
 import {
   Action,
   createSelector,
@@ -8,6 +8,7 @@ import {
 } from '@ngxs/store';
 import { Monster } from '../../lib/model/monster.model';
 import { MonsterAction } from './monster.action';
+import { MonsterDATA } from '../../lib/model/monster.data';
 
 export interface MonsterStateModel {
   monsters: Map<number, Monster>;
@@ -28,8 +29,13 @@ export class MonsterState {
   ) {
     const state = ctx.getState();
 
+    const monsters: Map<number,Monster> = new Map();
+    MonsterDATA.MONSTER_ALL.forEach((monster) => {
+      monsters.set(monster.getId(),monster);
+    })
+
     ctx.patchState({
-      monsters: new Map(),
+      monsters: monsters,
     });
   }
 
