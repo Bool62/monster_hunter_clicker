@@ -1,0 +1,8 @@
+<h1>Score</h1>
+<div>{{ monstersKilled$ | async }}</div>
+
+<h1>Current Monster</h1>
+<div>{{ (currentMonster$ | async)?.getCurrentHealth() }}</div>
+
+<button (click)="startClick()">></button>
+<button (click)="stopClick()">X</button>
