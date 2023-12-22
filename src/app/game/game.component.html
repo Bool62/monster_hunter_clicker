@@ -2,7 +2,7 @@
 <div>{{ monstersKilled$ | async }}</div>
 
 <h1>Current Monster</h1>
-<div>{{ (currentMonster$ | async)?.getCurrentHealth() }}</div>
+<div>{{ (currentMonster$ | async)?.currentHealth }}</div>
 
 <button (click)="startClick()">></button>
 <button (click)="stopClick()">X</button>

@@ -3,19 +3,19 @@ import { ItemInventory } from './item.model';
 import { Weapon } from './weapon.model';
 
 export class Character {
-  private attackPower: number = 1;
-  private totalAttackPower: number = 1;
-  private inventoryItem: Map<number,ItemInventory> = new Map();
-  private equipedArmor: string[] = [];
-  private equipedWeapon!: Weapon;
-  private inventoryArmor: Armor[] = [];
-  private inventoryWeapon: Weapon[] = [];
+  private _attackPower: number = 40;
+  private _totalAttackPower: number = 40;
+  private _inventoryItem: Map<number,ItemInventory> = new Map();
+  private _equipedArmor: string[] = [];
+  private _equipedWeapon!: Weapon;
+  private _inventoryArmor: Armor[] = [];
+  private _inventoryWeapon: Weapon[] = [];
 
-  getTotalAttackPower(): number {
-    return this.totalAttackPower;
+  get totalAttackPower(): number {
+    return this._totalAttackPower;
   }
 
-  getInventoryItem(): Map<number,ItemInventory> {
-    return this.inventoryItem;
+  get inventoryItem(): Map<number,ItemInventory> {
+    return this._inventoryItem;
   }
 }

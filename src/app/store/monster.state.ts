@@ -31,7 +31,7 @@ export class MonsterState {
 
     const monsters: Map<number,Monster> = new Map();
     MonsterDATA.MONSTER_ALL.forEach((monster) => {
-      monsters.set(monster.getId(),monster);
+      monsters.set(monster.id,monster);
     })
 
     ctx.patchState({

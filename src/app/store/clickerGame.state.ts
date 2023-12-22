@@ -38,27 +38,29 @@ export class ClickerGameState {
   ) {
     const state = ctx.getState();
 
-    const damage = state.character.getTotalAttackPower();
+    const damage = state.character.totalAttackPower;
 
     if (state.currentMonster) {
       state.currentMonster.takeDamage(damage);
       const rewards = state?.currentMonster.generateReward();
       if (!state.currentMonster.isAlive()) {
         const rewards = state.currentMonster.generateReward();
+        console.info(rewards);
         if(rewards && rewards.length > 0) {
-          const inventoryItem = state.character.getInventoryItem();
+          const inventoryItems = state.character.inventoryItem;
           rewards.forEach((reward) => {
-            if(inventoryItem.get(reward.getId())) {
-
+            const inventoryItem = inventoryItems.get(reward.id)
+            if(inventoryItem) {
+              inventoryItem.quantity = inventoryItem.quantity + 1
             }
             else {
-              // TODO création inventory
-              //inventoryItem.set(reward.getId(),new ItemInventory());
+              inventoryItems.set(reward.id,new ItemInventory(reward,1));
             }
           })
         }
         // Le monstre actuel est vaincu, passer au suivant
         ctx.patchState({
+          character: state.character,
           monstersKilled: state.monstersKilled + 1,
           currentMonster: this.spawnNextMonster(),
         });

@@ -11,45 +11,99 @@ export enum ArmorType {
 }
 
 export class ArmorResistance {
-  private element!: ElementType;
-  private resistance: number = 0;
+  private _element!: ElementType;
+  private _resistance: number = 0;
+
+  constructor(element: ElementType, resistance: number) {
+    this._element = element;
+    this._resistance = resistance;
+  }
 }
 
 export class ArmorAssets {
-  private imageMale: string = '';
-  private imageFemale: string = '';
+  private _imageMale: string = '';
+  private _imageFemale: string = '';
+
+  constructor(imageMale: string, imageFemale: string) {
+    this._imageFemale = imageFemale;
+    this._imageMale = imageMale;
+  }
 }
 
 export class SetInfo {
-  private id: number = 0;
-  private name: string = '';
-  private rank!: Rank;
-  private pieces: number[] = [];
+  private _id: number = 0;
+  private _name: string = '';
+  private _rank!: Rank;
+  private _pieces: number[] = [];
+
+  constructor(id: number, name: string, rank: Rank, pieces: number[]) {
+    this._id = id;
+    this._name = name;
+    this._rank = rank;
+    this._pieces = pieces;
+  }
+
 }
 
 export class CraftingCost {
-  quantity: number = 0;
-  item!: Item;
+  private _quantity: number = 0;
+  private _item!: Item;
+
+  constructor(quantity: number, item: Item) {
+    this._item = item;
+    this._quantity = quantity;
+  }
 }
 
 export class Armor {
-  private id: number = 0;
-  private name: string = '';
-  private rank!: Rank;
-  private type!: ArmorType;
-  private rarity: number = 0;
-  private defense: number = 0;
-  private resistances: ArmorResistance[] = [];
+  private _id: number = 0;
+  private _name: string = '';
+  private _rank!: Rank;
+  private _type!: ArmorType;
+  private _rarity: number = 0;
+  private _defense: number = 0;
+  private _resistances: ArmorResistance[] = [];
   // TODO add Skills
-  private armorSet!: SetInfo;
-  private armorAssets!: ArmorAssets;
-  private crafting: CraftingCost[] = [];
+  private _armorSet!: SetInfo;
+  private _armorAssets!: ArmorAssets;
+  private _crafting: CraftingCost[] = [];
+
+  constructor(
+    id: number,
+    name: string,
+    rank: Rank,
+    type: ArmorType,
+    rarity: number,
+    defense: number,
+    resistances: ArmorResistance[],
+    armorSet: SetInfo,
+    armorAssets: ArmorAssets,
+    crafting: CraftingCost[]
+  ) {
+    this._id = id;
+    this._name = name;
+    this._rank = rank;
+    this._type = type;
+    this._rarity = rarity;
+    this._defense = defense;
+    this._resistances = resistances;
+    this._armorSet = armorSet;
+    this._armorAssets = armorAssets;
+    this._crafting = crafting;
+  }
 }
 
 export class ArmorSet {
-  private id: number = 0;
-  private name: string = '';
-  private rank!: Rank;
-  private pieces: Armor[] = [];
+  private _id: number = 0;
+  private _name: string = '';
+  private _rank!: Rank;
+  private _pieces: Armor[] = [];
   // TODO add Skills
+
+  constructor(id: number, name: string, rank: Rank, pieces: Armor[]) {
+    this._id = id;
+    this._name = name;
+    this._rank = rank;
+    this._pieces = pieces;
+  }
 }
