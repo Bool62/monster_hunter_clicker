@@ -9,6 +9,7 @@ import { WeaponState } from './app/store/weapon.state';
 import { ItemState } from './app/store/item.state';
 import { MonsterState } from './app/store/monster.state';
 import { ClickerGameState } from './app/store/clickerGame.state';
+import { provideHttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -34,5 +35,6 @@ bootstrapApplication(App, {
       ])
     ),
     importProvidersFrom(NgxsLoggerPluginModule.forRoot()),
+    provideHttpClient()
   ],
 });
