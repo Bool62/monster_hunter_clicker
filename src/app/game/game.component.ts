@@ -6,6 +6,7 @@ import { Monster } from '../../lib/model/monster.model';
 import { ClickerGameActions } from '../store/clickerGame.action';
 import { ClickerGameState } from '../store/clickerGame.state';
 import { MonsterAction } from '../store/monster.action';
+import { ItemAction } from '../store/item.action';
 
 @Component({
   selector: 'app-game',
@@ -25,6 +26,7 @@ export class GameComponent implements OnInit {
 
   ngOnInit() {
     this.store.dispatch(new MonsterAction.LoadInit());
+    this.store.dispatch(new ItemAction.LoadInit());
   }
 
   stopClick() {

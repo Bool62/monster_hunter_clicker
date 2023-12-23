@@ -8,6 +8,7 @@ import {
 } from '@ngxs/store';
 import { Item } from '../../lib/model/item.model';
 import { ItemAction } from './item.action';
+import { ItemDATA } from '../../lib/model/item.data';
 
 export interface ItemStateModel {
   items: Map<number, Item>;
@@ -28,8 +29,13 @@ export class ItemState {
   ) {
     const state = ctx.getState();
 
+    const items: Map<number,Item> = new Map();
+    ItemDATA.ITEM_ALL.forEach((item) => {
+      items.set(item.id,item);
+    })
+
     ctx.patchState({
-      items: new Map(),
+      items: items,
     });
   }
 
