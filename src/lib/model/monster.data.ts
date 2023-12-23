@@ -10,7 +10,59 @@ import {
 import { Rank } from "./rank.model";
 
 export namespace MonsterDATA {
-  export const MONSTER_003_KELBI: Monster = new Monster(
+  const MONSTER_001 = new Monster(
+    1,
+    "Rathian",
+    'A wyvern known as the "Queen of the Land." Terrestrial predator, it overpowers its prey with a venomous tail and powerful legs.',
+    MonsterType.LARGE,
+    MonsterSpecies.FLYING_WYVERN,
+    [ElementType.FIRE],
+    [
+      ElementType.WATER,
+      ElementType.THUNDER,
+      ElementType.ICE,
+      ElementType.DRAGON,
+      ElementType.POISON,
+      ElementType.SLEEP,
+      ElementType.PARALYSIS,
+      ElementType.BLAST,
+      ElementType.STUN,
+    ],
+    [], // TODO reward from other referential,
+    4500,
+    4500,
+    4500,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_002 = new Monster(
+    2,
+    "Rathalos",
+    'The apex monster of the Ancient Forest, also known as the "King of the Skies". A fierce wyvern that descends upon invaders, attacking with its venomous claws and fiery breath.',
+    MonsterType.LARGE,
+    MonsterSpecies.FLYING_WYVERN,
+    [ElementType.FIRE],
+    [
+      ElementType.WATER,
+      ElementType.THUNDER,
+      ElementType.ICE,
+      ElementType.DRAGON,
+      ElementType.POISON,
+      ElementType.SLEEP,
+      ElementType.PARALYSIS,
+      ElementType.BLAST,
+      ElementType.STUN,
+    ],
+    [], // TODO reward from other referential,
+    4800,
+    4800,
+    4900,
+    Rank.LOW,
+    ""
+  );
+
+  export const MONSTER_003: Monster = new Monster(
     3,
     "Kelbi",
     "Small herbivores known for their gentle demeanor and the medicinal properties of their horns. Those wishing to harvest a horn should aim for the head when attacking them.",
@@ -47,6 +99,393 @@ export namespace MonsterDATA {
     ""
   );
 
+  const MONSTER_005 = new Monster(
+    5,
+    "Hornetaur",
+    "Small insects that are found primarily on land. They're highly territorial and will attack anything that approaches them. Gather their materials by attacking them with the slinger.",
+    MonsterType.SMALL,
+    MonsterSpecies.NEOPTERON,
+    [],
+    [ElementType.FIRE, ElementType.WATER],
+    [], // TODO reward from other referential,
+    60,
+    60,
+    60,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_006 = new Monster(
+    6,
+    "Vespoid",
+    "Insects that paralyze their targets with their long stingers. They break easily, so attack them with poison or slinger ammo if you want to carve them.",
+    MonsterType.SMALL,
+    MonsterSpecies.NEOPTERON,
+    [],
+    [ElementType.FIRE, ElementType.POISON],
+    [], // TODO reward from other referential,
+    40,
+    40,
+    40,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_007 = new Monster(
+    7,
+    "Diablos",
+    "The apex monster of the Wildspire Waste. A menacing, territorial beast that lurks underground. Loud noises will cause it to lunge out of the sand in search of prey.",
+    MonsterType.LARGE,
+    MonsterSpecies.FLYING_WYVERN,
+    [ElementType.FIRE],
+    [
+      ElementType.WATER,
+      ElementType.THUNDER,
+      ElementType.ICE,
+      ElementType.DRAGON,
+      ElementType.POISON,
+      ElementType.SLEEP,
+      ElementType.PARALYSIS,
+      ElementType.BLAST,
+      ElementType.STUN,
+    ],
+    [], // TODO reward from other referential,
+    4500,
+    4500,
+    4500,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_024 = new Monster(
+    24,
+    "Kushala Daora",
+    "An elder dragon that shields itself with fierce winds, preventing anyone from approaching it. Its skin consists of hard, metallic scales.",
+    MonsterType.LARGE,
+    MonsterSpecies.ELDER_DRAGON,
+    [ElementType.WATER, ElementType.ICE],
+    [
+      ElementType.FIRE,
+      ElementType.THUNDER,
+      ElementType.DRAGON,
+      ElementType.POISON,
+      ElementType.SLEEP,
+      ElementType.PARALYSIS,
+      ElementType.BLAST,
+      ElementType.STUN,
+    ],
+    [], // TODO reward from other referential,
+    4500,
+    4500,
+    4500,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_025 = new Monster(
+    25,
+    "Rajang",
+    "An ultra-aggressive creature that few have a chance of surviving against. Sports powerful arms that pack a punch, and turns gold when angry.",
+    MonsterType.LARGE,
+    MonsterSpecies.FANGED_BEAST,
+    [ElementType.THUNDER, ElementType.FIRE, ElementType.DRAGON],
+    [
+      ElementType.BLAST,
+      ElementType.POISON,
+      ElementType.SLEEP,
+      ElementType.PARALYSIS,
+      ElementType.STUN,
+      ElementType.ICE,
+      ElementType.WATER,
+    ],
+    [], // TODO reward from other referential,
+    4500,
+    4500,
+    4250,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_027 = new Monster(
+    27,
+    "Teostra",
+    "A brutal elder dragon wreathed in flames that spits blazing fire. Teostra are of such a fierce and deadly nature that the Guild closely monitors their movements.",
+    MonsterType.LARGE,
+    MonsterSpecies.ELDER_DRAGON,
+    [ElementType.FIRE],
+    [
+      ElementType.WATER,
+      ElementType.THUNDER,
+      ElementType.ICE,
+      ElementType.DRAGON,
+      ElementType.POISON,
+      ElementType.SLEEP,
+      ElementType.PARALYSIS,
+      ElementType.BLAST,
+      ElementType.STUN,
+    ],
+    [], // TODO reward from other referential,
+    4300,
+    4300,
+    4300,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_029 = new Monster(
+    29,
+    "Gajau",
+    "Vicious piscine that form groups to defend their territory from intruders. Be sure not to venture too closely to their habitat!",
+    MonsterType.SMALL,
+    MonsterSpecies.FISH,
+    [],
+    [ElementType.FIRE, ElementType.THUNDER],
+    [], // TODO reward from other referential,
+    100,
+    100,
+    100,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_044 = new Monster(
+    44,
+    "Barroth",
+    "Barroth seek out ants, their favorite snack, and mark their territory with mud. They attack potential rivals with their devastating charging attack.",
+    MonsterType.LARGE,
+    MonsterSpecies.BRUTE_WYVERN,
+    [ElementType.FIRE, ElementType.WATER, ElementType.THUNDER],
+    [
+      ElementType.FIRE,
+      ElementType.WATER,
+      ElementType.ICE,
+      ElementType.DRAGON,
+      ElementType.POISON,
+      ElementType.SLEEP,
+      ElementType.PARALYSIS,
+      ElementType.BLAST,
+      ElementType.STUN,
+    ],
+    [], // TODO reward from other referential,
+    3800, // TODO health from other referential,
+    3800, // TODO health from other referential,
+    3600, // TODO health from other referential,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_049 = new Monster(
+    49,
+    "Jagras",
+    "Members of the Great Jagras pack, these smaller monsters will flee upon seeing one of their own perish. They're also known for ambushing larger monsters at a moment's notice.",
+    MonsterType.SMALL,
+    MonsterSpecies.FANGED_WYVERN,
+    [],
+    [ElementType.FIRE, ElementType.THUNDER],
+    [], // TODO reward from other referential,
+    80,
+    80,
+    80,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_051 = new Monster(
+    51,
+    "Kestodon",
+    "Female Kestodon will alert the pack of danger, while the males will violently charge would-be threats. Their rushing charges can be blocked, however, leaving them open to attacks.",
+    MonsterType.SMALL,
+    MonsterSpecies.HERBIVORE,
+    [],
+    [ElementType.WATER, ElementType.ICE],
+    [], // TODO reward from other referential,
+    120,
+    120,
+    120,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_057 = new Monster(
+    57,
+    "Zinogre",
+    "Lightning courses through the fur and unique plating of this fanged wyvern. It is most deadly in its supercharged state.",
+    MonsterType.LARGE,
+    MonsterSpecies.FANGED_WYVERN,
+    [ElementType.THUNDER],
+    [ElementType.ICE, ElementType.WATER, ElementType.FIRE, ElementType.DRAGON],
+    [], // TODO reward from other referential,
+    4500,
+    4500,
+    4700,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_100 = new Monster(
+    100,
+    "Anjanath",
+    "The Anjanath patrols the Ancient Forest, looking for its favorite meal, Aptonoth. This belligerent monster will attack anything without hesitation.",
+    MonsterType.LARGE,
+    MonsterSpecies.BRUTE_WYVERN,
+    [ElementType.FIRE],
+    [
+      ElementType.WATER,
+      ElementType.THUNDER,
+      ElementType.ICE,
+      ElementType.DRAGON,
+      ElementType.POISON,
+      ElementType.SLEEP,
+      ElementType.PARALYSIS,
+      ElementType.BLAST,
+      ElementType.STUN,
+    ],
+    [], // TODO reward from other referential,
+    4000,
+    4000,
+    4000,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_102 = new Monster(
+    102,
+    "Pukei-Pukei",
+    "A bird wyvern known to possess poisonous toxins in its body. It's been spotted storing scatternuts in its mouth or tail, coating them with poison and spitting them out at threats.",
+    MonsterType.LARGE,
+    MonsterSpecies.BIRD_WYNVERN,
+    [ElementType.WATER],
+    [
+      ElementType.FIRE,
+      ElementType.THUNDER,
+      ElementType.ICE,
+      ElementType.DRAGON,
+      ElementType.POISON,
+      ElementType.SLEEP,
+      ElementType.PARALYSIS,
+      ElementType.BLAST,
+      ElementType.STUN,
+    ],
+    [], // TODO reward from other referential,
+    4100,
+    4100,
+    4100,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_107 = new Monster(
+    107,
+    "Kulu-Ya-Ku",
+    "An odd bird wyvern that has developed limbs capable of carrying weapons. It's been spotted stealing eggs from nests found in the Ancient Forest and Wildspire Waste.",
+    MonsterType.LARGE,
+    MonsterSpecies.BIRD_WYNVERN,
+    [],
+    [
+      ElementType.FIRE,
+      ElementType.WATER,
+      ElementType.THUNDER,
+      ElementType.ICE,
+      ElementType.DRAGON,
+      ElementType.BLAST,
+      ElementType.PARALYSIS,
+      ElementType.POISON,
+      ElementType.SLEEP,
+      ElementType.STUN,
+    ],
+    [], // TODO reward from other referential,
+    3300,
+    3300,
+    3300,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_108 = new Monster(
+    108,
+    "Jyuratodus",
+    "A large piscine wyvern that inhabits the swamps of the Wildspire Waste. It uses mud to capture prey, and it's known to battle Barroth over territory.",
+    MonsterType.LARGE,
+    MonsterSpecies.PISICINE_WYVERN,
+    [ElementType.FIRE, ElementType.THUNDER, ElementType.WATER],
+    [
+      ElementType.FIRE,
+      ElementType.WATER,
+      ElementType.THUNDER,
+      ElementType.ICE,
+      ElementType.DRAGON,
+      ElementType.POISON,
+      ElementType.SLEEP,
+      ElementType.PARALYSIS,
+      ElementType.BLAST,
+      ElementType.STUN,
+    ],
+    [], // TODO reward from other referential,
+    4500,
+    4500,
+    4500,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_109 = new Monster(
+    109,
+    "Tobi-Kadachi",
+    "A fanged wyvern that flies among the trees of the Ancient Forest. Its penchant to brush against the ground and the trees as it moves around builds up static electricity within its fur.",
+    MonsterType.LARGE,
+    MonsterSpecies.FANGED_WYVERN,
+    [ElementType.THUNDER],
+    [
+      ElementType.FIRE,
+      ElementType.WATER,
+      ElementType.ICE,
+      ElementType.DRAGON,
+      ElementType.POISON,
+      ElementType.SLEEP,
+      ElementType.PARALYSIS,
+      ElementType.BLAST,
+      ElementType.STUN,
+    ],
+    [], // TODO reward from other referential,
+    5200,
+    5200,
+    5200,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_118 = new Monster(
+    118,
+    "Bazelgeuse",
+    "A nefarious flying wyvern that travels the New World in search of prey. It scatters explosive scales over a wide area to prey on whatever gets caught in the blast.",
+    MonsterType.LARGE,
+    MonsterSpecies.FLYING_WYVERN,
+    [ElementType.FIRE],
+    [
+      ElementType.WATER,
+      ElementType.THUNDER,
+      ElementType.ICE,
+      ElementType.DRAGON,
+      ElementType.POISON,
+      ElementType.SLEEP,
+      ElementType.PARALYSIS,
+      ElementType.BLAST,
+      ElementType.STUN,
+    ],
+    [], // TODO reward from other referential,
+    4600, // TODO health from other referential,
+    4600, // TODO health from other referential,
+    4600, // TODO health from other referential,
+    Rank.LOW,
+    ""
+  );
+
+  //////
+
+  //////
+
+  //////
+
   const monster_1 = new Monster(
     1,
     "Aptonoth",
@@ -63,22 +502,6 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_2 = new Monster(
-    2,
-    "Jagras",
-    "Members of the Great Jagras pack, these smaller monsters will flee upon seeing one of their own perish. They're also known for ambushing larger monsters at a moment's notice.",
-    MonsterType.SMALL,
-    MonsterSpecies.FANGED_WYVERN,
-    [],
-    [ElementType.FIRE, ElementType.THUNDER],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
   const monster_3 = new Monster(
     3,
     "Mernos",
@@ -87,22 +510,6 @@ export namespace MonsterDATA {
     MonsterSpecies.WINGDRAKE,
     [],
     [ElementType.FIRE, ElementType.WATER, ElementType.THUNDER, ElementType.ICE],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
-  const monster_4 = new Monster(
-    4,
-    "Vespoid",
-    "Insects that paralyze their targets with their long stingers. They break easily, so attack them with poison or slinger ammo if you want to carve them.",
-    MonsterType.SMALL,
-    MonsterSpecies.NEOPTERON,
-    [],
-    [ElementType.FIRE, ElementType.POISON],
     [], // TODO reward from other referential,
     100, // TODO health from other referential,
     100, // TODO health from other referential,
@@ -143,22 +550,6 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_7 = new Monster(
-    7,
-    "Kestodon",
-    "Female Kestodon will alert the pack of danger, while the males will violently charge would-be threats. Their rushing charges can be blocked, however, leaving them open to attacks.",
-    MonsterType.SMALL,
-    MonsterSpecies.HERBIVORE,
-    [],
-    [ElementType.WATER, ElementType.ICE],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
   const monster_8 = new Monster(
     8,
     "Noios",
@@ -167,22 +558,6 @@ export namespace MonsterDATA {
     MonsterSpecies.WINGDRAKE,
     [],
     [ElementType.WATER, ElementType.THUNDER, ElementType.ICE],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
-  const monster_9 = new Monster(
-    9,
-    "Gajau",
-    "Vicious piscine that form groups to defend their territory from intruders. Be sure not to venture too closely to their habitat!",
-    MonsterType.SMALL,
-    MonsterSpecies.FISH,
-    [],
-    [ElementType.FIRE, ElementType.THUNDER],
     [], // TODO reward from other referential,
     100, // TODO health from other referential,
     100, // TODO health from other referential,
@@ -231,22 +606,6 @@ export namespace MonsterDATA {
     MonsterSpecies.FANGED_WYVERN,
     [],
     [ElementType.THUNDER],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
-  const monster_14 = new Monster(
-    14,
-    "Hornetaur",
-    "Small insects that are found primarily on land. They're highly territorial and will attack anything that approaches them. Gather their materials by attacking them with the slinger.",
-    MonsterType.SMALL,
-    MonsterSpecies.NEOPTERON,
-    [],
-    [ElementType.FIRE, ElementType.WATER],
     [], // TODO reward from other referential,
     100, // TODO health from other referential,
     100, // TODO health from other referential,
@@ -313,164 +672,6 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_18 = new Monster(
-    18,
-    "Kulu-Ya-Ku",
-    "An odd bird wyvern that has developed limbs capable of carrying weapons. It's been spotted stealing eggs from nests found in the Ancient Forest and Wildspire Waste.",
-    MonsterType.LARGE,
-    MonsterSpecies.BIRD_WYNVERN,
-    [],
-    [
-      ElementType.FIRE,
-      ElementType.WATER,
-      ElementType.THUNDER,
-      ElementType.ICE,
-      ElementType.DRAGON,
-      ElementType.BLAST,
-      ElementType.PARALYSIS,
-      ElementType.POISON,
-      ElementType.SLEEP,
-      ElementType.STUN,
-    ],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
-  const monster_19 = new Monster(
-    19,
-    "Pukei-Pukei",
-    "A bird wyvern known to possess poisonous toxins in its body. It's been spotted storing scatternuts in its mouth or tail, coating them with poison and spitting them out at threats.",
-    MonsterType.LARGE,
-    MonsterSpecies.BIRD_WYNVERN,
-    [ElementType.WATER],
-    [
-      ElementType.FIRE,
-      ElementType.THUNDER,
-      ElementType.ICE,
-      ElementType.DRAGON,
-      ElementType.POISON,
-      ElementType.SLEEP,
-      ElementType.PARALYSIS,
-      ElementType.BLAST,
-      ElementType.STUN,
-    ],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
-  const monster_20 = new Monster(
-    20,
-    "Barroth",
-    "Barroth seek out ants, their favorite snack, and mark their territory with mud. They attack potential rivals with their devastating charging attack.",
-    MonsterType.LARGE,
-    MonsterSpecies.BRUTE_WYVERN,
-    [ElementType.FIRE, ElementType.WATER, ElementType.THUNDER],
-    [
-      ElementType.FIRE,
-      ElementType.WATER,
-      ElementType.ICE,
-      ElementType.DRAGON,
-      ElementType.POISON,
-      ElementType.SLEEP,
-      ElementType.PARALYSIS,
-      ElementType.BLAST,
-      ElementType.STUN,
-    ],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
-  const monster_21 = new Monster(
-    21,
-    "Jyuratodus",
-    "A large piscine wyvern that inhabits the swamps of the Wildspire Waste. It uses mud to capture prey, and it's known to battle Barroth over territory.",
-    MonsterType.LARGE,
-    MonsterSpecies.PISICINE_WYVERN,
-    [ElementType.FIRE, ElementType.THUNDER, ElementType.WATER],
-    [
-      ElementType.FIRE,
-      ElementType.WATER,
-      ElementType.THUNDER,
-      ElementType.ICE,
-      ElementType.DRAGON,
-      ElementType.POISON,
-      ElementType.SLEEP,
-      ElementType.PARALYSIS,
-      ElementType.BLAST,
-      ElementType.STUN,
-    ],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
-  const monster_22 = new Monster(
-    22,
-    "Tobi-Kadachi",
-    "A fanged wyvern that flies among the trees of the Ancient Forest. Its penchant to brush against the ground and the trees as it moves around builds up static electricity within its fur.",
-    MonsterType.LARGE,
-    MonsterSpecies.FANGED_WYVERN,
-    [ElementType.THUNDER],
-    [
-      ElementType.FIRE,
-      ElementType.WATER,
-      ElementType.ICE,
-      ElementType.DRAGON,
-      ElementType.POISON,
-      ElementType.SLEEP,
-      ElementType.PARALYSIS,
-      ElementType.BLAST,
-      ElementType.STUN,
-    ],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
-  const monster_23 = new Monster(
-    23,
-    "Anjanath",
-    "The Anjanath patrols the Ancient Forest, looking for its favorite meal, Aptonoth. This belligerent monster will attack anything without hesitation.",
-    MonsterType.LARGE,
-    MonsterSpecies.BRUTE_WYVERN,
-    [ElementType.FIRE],
-    [
-      ElementType.WATER,
-      ElementType.THUNDER,
-      ElementType.ICE,
-      ElementType.DRAGON,
-      ElementType.POISON,
-      ElementType.SLEEP,
-      ElementType.PARALYSIS,
-      ElementType.BLAST,
-      ElementType.STUN,
-    ],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
   const monster_24 = new Monster(
     24,
     "Azure Rathalos",
@@ -483,32 +684,6 @@ export namespace MonsterDATA {
       ElementType.ICE,
       ElementType.WATER,
       ElementType.THUNDER,
-      ElementType.POISON,
-      ElementType.SLEEP,
-      ElementType.PARALYSIS,
-      ElementType.BLAST,
-      ElementType.STUN,
-    ],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
-  const monster_25 = new Monster(
-    25,
-    "Bazelgeuse",
-    "A nefarious flying wyvern that travels the New World in search of prey. It scatters explosive scales over a wide area to prey on whatever gets caught in the blast.",
-    MonsterType.LARGE,
-    MonsterSpecies.FLYING_WYVERN,
-    [ElementType.FIRE],
-    [
-      ElementType.WATER,
-      ElementType.THUNDER,
-      ElementType.ICE,
-      ElementType.DRAGON,
       ElementType.POISON,
       ElementType.SLEEP,
       ElementType.PARALYSIS,
@@ -559,32 +734,6 @@ export namespace MonsterDATA {
     [],
     [
       ElementType.FIRE,
-      ElementType.WATER,
-      ElementType.THUNDER,
-      ElementType.ICE,
-      ElementType.DRAGON,
-      ElementType.POISON,
-      ElementType.SLEEP,
-      ElementType.PARALYSIS,
-      ElementType.BLAST,
-      ElementType.STUN,
-    ],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
-  const monster_28 = new Monster(
-    28,
-    "Diablos",
-    "The apex monster of the Wildspire Waste. A menacing, territorial beast that lurks underground. Loud noises will cause it to lunge out of the sand in search of prey.",
-    MonsterType.LARGE,
-    MonsterSpecies.FLYING_WYVERN,
-    [ElementType.FIRE],
-    [
       ElementType.WATER,
       ElementType.THUNDER,
       ElementType.ICE,
@@ -718,31 +867,6 @@ export namespace MonsterDATA {
       ElementType.THUNDER,
       ElementType.ICE,
       ElementType.DRAGON,
-      ElementType.DRAGON,
-      ElementType.POISON,
-      ElementType.SLEEP,
-      ElementType.PARALYSIS,
-      ElementType.BLAST,
-      ElementType.STUN,
-    ],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
-  const monster_34 = new Monster(
-    34,
-    "Kushala Daora",
-    "An elder dragon that shields itself with fierce winds, preventing anyone from approaching it. Its skin consists of hard, metallic scales.",
-    MonsterType.LARGE,
-    MonsterSpecies.ELDER_DRAGON,
-    [ElementType.WATER, ElementType.ICE],
-    [
-      ElementType.FIRE,
-      ElementType.THUNDER,
       ElementType.DRAGON,
       ElementType.POISON,
       ElementType.SLEEP,
@@ -944,90 +1068,12 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_42 = new Monster(
-    42,
-    "Rathalos",
-    'The apex monster of the Ancient Forest, also known as the "King of the Skies". A fierce wyvern that descends upon invaders, attacking with its venomous claws and fiery breath.',
-    MonsterType.LARGE,
-    MonsterSpecies.FLYING_WYVERN,
-    [ElementType.FIRE],
-    [
-      ElementType.WATER,
-      ElementType.THUNDER,
-      ElementType.ICE,
-      ElementType.DRAGON,
-      ElementType.POISON,
-      ElementType.SLEEP,
-      ElementType.PARALYSIS,
-      ElementType.BLAST,
-      ElementType.STUN,
-    ],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
-  const monster_43 = new Monster(
-    43,
-    "Rathian",
-    'A wyvern known as the "Queen of the Land." Terrestrial predator, it overpowers its prey with a venomous tail and powerful legs.',
-    MonsterType.LARGE,
-    MonsterSpecies.FLYING_WYVERN,
-    [ElementType.FIRE],
-    [
-      ElementType.WATER,
-      ElementType.THUNDER,
-      ElementType.ICE,
-      ElementType.DRAGON,
-      ElementType.POISON,
-      ElementType.SLEEP,
-      ElementType.PARALYSIS,
-      ElementType.BLAST,
-      ElementType.STUN,
-    ],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
   const monster_44 = new Monster(
     44,
     "Pink Rathian",
     "A subspecies with vibrant pink scales. Pink Rathians wield their toxic tails more deftly than normal Rathians, weakening prey with poison before moving in for the kill.",
     MonsterType.LARGE,
     MonsterSpecies.FLYING_WYVERN,
-    [ElementType.FIRE],
-    [
-      ElementType.WATER,
-      ElementType.THUNDER,
-      ElementType.ICE,
-      ElementType.DRAGON,
-      ElementType.POISON,
-      ElementType.SLEEP,
-      ElementType.PARALYSIS,
-      ElementType.BLAST,
-      ElementType.STUN,
-    ],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
-  const monster_45 = new Monster(
-    45,
-    "Teostra",
-    "A brutal elder dragon wreathed in flames that spits blazing fire. Teostra are of such a fierce and deadly nature that the Guild closely monitors their movements.",
-    MonsterType.LARGE,
-    MonsterSpecies.ELDER_DRAGON,
     [ElementType.FIRE],
     [
       ElementType.WATER,
@@ -1269,30 +1315,6 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_57 = new Monster(
-    57,
-    "Rajang",
-    "An ultra-aggressive creature that few have a chance of surviving against. Sports powerful arms that pack a punch, and turns gold when angry.",
-    MonsterType.LARGE,
-    MonsterSpecies.FANGED_BEAST,
-    [ElementType.THUNDER, ElementType.FIRE, ElementType.DRAGON],
-    [
-      ElementType.BLAST,
-      ElementType.POISON,
-      ElementType.SLEEP,
-      ElementType.PARALYSIS,
-      ElementType.STUN,
-      ElementType.ICE,
-      ElementType.WATER,
-    ],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
   const monster_58 = new Monster(
     58,
     "Viper Tobi-Kadachi",
@@ -1335,21 +1357,26 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_60 = new Monster(
-    60,
-    "Zinogre",
-    "Lightning courses through the fur and unique plating of this fanged wyvern. It is most deadly in its supercharged state.",
-    MonsterType.LARGE,
-    MonsterSpecies.FANGED_WYVERN,
-    [ElementType.THUNDER],
-    [ElementType.ICE, ElementType.WATER, ElementType.FIRE, ElementType.DRAGON],
-    [], // TODO reward from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    100, // TODO health from other referential,
-    Rank.LOW,
-    ""
-  );
-
-  export const MONSTER_ALL: Monster[] = [MONSTER_003_KELBI];
+  export const MONSTER_ALL: Monster[] = [
+    MONSTER_001,
+    MONSTER_002,
+    MONSTER_003,
+    MONSTER_005,
+    MONSTER_006,
+    MONSTER_007,
+    MONSTER_024,
+    MONSTER_025,
+    MONSTER_027,
+    MONSTER_029,
+    MONSTER_044,
+    MONSTER_049,
+    MONSTER_051,
+    MONSTER_057,
+    MONSTER_100,
+    MONSTER_102,
+    MONSTER_107,
+    MONSTER_108,
+    MONSTER_109,
+    MONSTER_118,
+  ];
 }
