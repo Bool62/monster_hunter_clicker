@@ -107,7 +107,20 @@ export namespace MonsterDATA {
     MonsterSpecies.NEOPTERON,
     [],
     [ElementType.FIRE, ElementType.WATER],
-    [], // TODO reward from other referential,
+    [
+      new MonsterReward(ItemDATA.ITEM_2330, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 40),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2329, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 32),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2331, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 10),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2369, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 18),
+      ]),
+    ], // TODO reward from other referential,
     60,
     60,
     60,
@@ -318,6 +331,22 @@ export namespace MonsterDATA {
     4500,
     4500,
     4700,
+    Rank.LOW,
+    ""
+  );
+
+  const MONSTER_098 = new Monster(
+    98,
+    "Great Izuchi",
+    "The alpha Izuchi of its pack, identified by its larger build, upended white fur and scythe-like tail. A Great Izuchi forms a herd of many smaller Izuchi and selects two from the group to accompany it on territory patrols. Once it spots prey or senses danger, the Great Izuchi issues commands to their fellow Izuchi, and coordinates their movements. Take care that you don't get overwhelmed.",
+    MonsterType.LARGE,
+    MonsterSpecies.BIRD_WYNVERN,
+    [ElementType.DRAGON],
+    [ElementType.WATER, ElementType.THUNDER],
+    [], // TODO reward from other referential,
+    3000,
+    3000,
+    3000,
     Rank.LOW,
     ""
   );
