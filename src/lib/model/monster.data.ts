@@ -28,7 +28,97 @@ export namespace MonsterDATA {
       ElementType.BLAST,
       ElementType.STUN,
     ],
-    [], // TODO reward from other referential,
+    [
+      new MonsterReward(ItemDATA.ITEM_92, [
+        new MonsterRewardCondition(Rank.LOW, 1, 41),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_93, [
+        new MonsterRewardCondition(Rank.LOW, 1, 30),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_94, [
+        new MonsterRewardCondition(Rank.LOW, 1, 20),
+        new MonsterRewardCondition(Rank.HIGH, 2, 13),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_95, [
+        new MonsterRewardCondition(Rank.LOW, 1, 13),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_102, [
+        new MonsterRewardCondition(Rank.LOW, 1, 15),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_419, [
+        new MonsterRewardCondition(Rank.LOW, 1, 13),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_96, [
+        new MonsterRewardCondition(Rank.LOW, 1, 1),
+        new MonsterRewardCondition(Rank.HIGH, 1, 2),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_101, [
+        new MonsterRewardCondition(Rank.LOW, 1, 5),
+        new MonsterRewardCondition(Rank.HIGH, 1, 11),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_457, [
+        new MonsterRewardCondition(Rank.LOW, 1, 31),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1006, [
+        new MonsterRewardCondition(Rank.LOW, 1, 50),
+        new MonsterRewardCondition(Rank.HIGH, 1, 20),
+        new MonsterRewardCondition(Rank.MASTER, 1, 15),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_294, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 40),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_295, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 29),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_296, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 13),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_445, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 19),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_421, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 12),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_297, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 1),
+        new MonsterRewardCondition(Rank.MASTER, 1, 1),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_458, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 4),
+        new MonsterRewardCondition(Rank.MASTER, 1, 12),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1028, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 30),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1007, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 30),
+        new MonsterRewardCondition(Rank.MASTER, 1, 35),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2007, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 40),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2006, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 29),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2008, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 19),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2009, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 13),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2375, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 16),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2360, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 12),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2010, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 1),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2016, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 31),
+      ]),
+    ],
     4500,
     4500,
     4500,
@@ -54,7 +144,88 @@ export namespace MonsterDATA {
       ElementType.BLAST,
       ElementType.STUN,
     ],
-    [], // TODO reward from other referential,
+    [
+      new MonsterReward(ItemDATA.ITEM_97, [
+        new MonsterRewardCondition(Rank.LOW, 1, 39),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_98, [
+        new MonsterRewardCondition(Rank.LOW, 1, 33),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_99, [
+        new MonsterRewardCondition(Rank.LOW, 1, 24),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_464, [
+        new MonsterRewardCondition(Rank.LOW, 1, 28),
+        new MonsterRewardCondition(Rank.HIGH, 1, 36),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_102, [
+        new MonsterRewardCondition(Rank.LOW, 1, 13),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_101, [
+        new MonsterRewardCondition(Rank.LOW, 1, 9),
+        new MonsterRewardCondition(Rank.HIGH, 1, 15),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_100, [
+        new MonsterRewardCondition(Rank.LOW, 1, 1),
+        new MonsterRewardCondition(Rank.HIGH, 1, 2),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_457, [
+        new MonsterRewardCondition(Rank.LOW, 1, 24),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1006, [
+        new MonsterRewardCondition(Rank.LOW, 1, 50),
+        new MonsterRewardCondition(Rank.HIGH, 1, 15),
+        new MonsterRewardCondition(Rank.MASTER, 1, 10),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_310, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 38),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_311, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 29),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_312, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 24),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_445, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 13),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_458, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 9),
+        new MonsterRewardCondition(Rank.MASTER, 1, 10),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_313, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 1),
+        new MonsterRewardCondition(Rank.MASTER, 1, 1),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1028, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 23),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1007, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 35),
+        new MonsterRewardCondition(Rank.MASTER, 1, 40),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2011, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 38),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2012, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 31),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2014, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 25),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2375, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 13),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2013, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 25),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2015, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 1),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2016, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 23),
+      ]),
+    ],
     4800,
     4800,
     4900,
@@ -162,7 +333,73 @@ export namespace MonsterDATA {
       ElementType.BLAST,
       ElementType.STUN,
     ],
-    [], // TODO reward from other referential,
+    [
+      new MonsterReward(ItemDATA.ITEM_316, [
+        new MonsterRewardCondition(Rank.LOW, 1, 38),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_318, [
+        new MonsterRewardCondition(Rank.LOW, 1, 38),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_321, [
+        new MonsterRewardCondition(Rank.LOW, 1, 23),
+        new MonsterRewardCondition(Rank.HIGH, 2, 13),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_320, [
+        new MonsterRewardCondition(Rank.LOW, 1, 27),
+        new MonsterRewardCondition(Rank.HIGH, 1, 23),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_454, [
+        new MonsterRewardCondition(Rank.LOW, 1, 19),
+        new MonsterRewardCondition(Rank.HIGH, 2, 16),
+        new MonsterRewardCondition(Rank.MASTER, 2, 16),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_322, [
+        new MonsterRewardCondition(Rank.LOW, 1, 14),
+        new MonsterRewardCondition(Rank.HIGH, 1, 11),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_314, [
+        new MonsterRewardCondition(Rank.LOW, 1, 100),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1006, [
+        new MonsterRewardCondition(Rank.LOW, 1, 50),
+        new MonsterRewardCondition(Rank.HIGH, 1, 10),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_317, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 41),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_319, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 37),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_323, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 14),
+        new MonsterRewardCondition(Rank.MASTER, 1, 9),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_427, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 2),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_315, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 100),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1007, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 40),
+        new MonsterRewardCondition(Rank.MASTER, 1, 50),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2026, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 46),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2024, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 44),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2025, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 26),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2381, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 2),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2027, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 100),
+      ]),
+    ],
     4500,
     4500,
     4500,
@@ -187,7 +424,64 @@ export namespace MonsterDATA {
       ElementType.BLAST,
       ElementType.STUN,
     ],
-    [], // TODO reward from other referential,
+    [
+      new MonsterReward(ItemDATA.ITEM_347, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 35),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_348, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 32),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_352, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 19),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_349, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 42),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_351, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 46),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_353, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 1),
+        new MonsterRewardCondition(Rank.MASTER, 1, 5),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_350, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 48),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_436, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 15),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1012, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 40),
+        new MonsterRewardCondition(Rank.MASTER, 1, 15),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2046, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 40),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2047, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 26),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2051, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 19),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2048, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 41),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2050, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 46),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2382, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 1),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2049, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 50),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2379, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 15),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2383, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 25),
+      ]),
+    ],
     4500,
     4500,
     4500,
@@ -211,7 +505,64 @@ export namespace MonsterDATA {
       ElementType.ICE,
       ElementType.WATER,
     ],
-    [], // TODO reward from other referential,
+    [
+      new MonsterReward(ItemDATA.ITEM_341, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 36),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_343, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 26),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_625, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 49),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_345, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 46),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_346, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 1),
+        new MonsterRewardCondition(Rank.MASTER, 1, 5),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_698, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 20),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_342, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 31),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_436, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 17),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1012, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 40),
+        new MonsterRewardCondition(Rank.MASTER, 1, 15),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2052, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 36),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2054, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 26),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2056, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 49),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2055, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 46),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2382, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 1),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2053, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 32),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2379, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 17),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2684, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 21),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2383, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 25),
+      ]),
+    ],
     4500,
     4500,
     4250,
@@ -237,7 +588,72 @@ export namespace MonsterDATA {
       ElementType.BLAST,
       ElementType.STUN,
     ],
-    [], // TODO reward from other referential,
+    [
+      new MonsterReward(ItemDATA.ITEM_354, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 30),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_358, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 22),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_355, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 19),
+        new MonsterRewardCondition(Rank.MASTER, 1, 12),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_359, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 16),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_361, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 25),
+        new MonsterRewardCondition(Rank.MASTER, 2, 18),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_356, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 46),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_362, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 1),
+        new MonsterRewardCondition(Rank.MASTER, 1, 5),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_360, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 40),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_357, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 40),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_436, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 10),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1012, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 40),
+        new MonsterRewardCondition(Rank.MASTER, 1, 15),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2057, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 37),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2060, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 26),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2061, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 17),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2058, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 46),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2382, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 1),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2062, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 40),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2059, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 44),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2379, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 10),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2383, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 25),
+      ]),
+    ],
     4300,
     4300,
     4300,
@@ -279,7 +695,80 @@ export namespace MonsterDATA {
       ElementType.BLAST,
       ElementType.STUN,
     ],
-    [], // TODO reward from other referential,
+    [
+      new MonsterReward(ItemDATA.ITEM_240, [
+        new MonsterRewardCondition(Rank.LOW, 1, 41),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_242, [
+        new MonsterRewardCondition(Rank.LOW, 1, 18),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_244, [
+        new MonsterRewardCondition(Rank.LOW, 1, 39),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_246, [
+        new MonsterRewardCondition(Rank.LOW, 1, 28),
+        new MonsterRewardCondition(Rank.HIGH, 1, 23),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_247, [
+        new MonsterRewardCondition(Rank.LOW, 1, 25),
+        new MonsterRewardCondition(Rank.HIGH, 1, 20),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_248, [
+        new MonsterRewardCondition(Rank.LOW, 1, 32),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_418, [
+        new MonsterRewardCondition(Rank.LOW, 1, 10),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1006, [
+        new MonsterRewardCondition(Rank.LOW, 1, 50),
+        new MonsterRewardCondition(Rank.HIGH, 1, 20),
+        new MonsterRewardCondition(Rank.MASTER, 1, 15),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_241, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 41),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_243, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 18),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_245, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 39),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_659, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 32),
+        new MonsterRewardCondition(Rank.MASTER, 2, 23),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_421, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 11),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_427, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 2),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1007, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 30),
+        new MonsterRewardCondition(Rank.MASTER, 1, 35),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2083, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 51),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2084, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 29),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2085, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 45),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2086, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 23),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2087, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 20),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2360, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 11),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2381, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 2),
+      ]),
+    ],
     3800, // TODO health from other referential,
     3800, // TODO health from other referential,
     3600, // TODO health from other referential,
@@ -327,7 +816,85 @@ export namespace MonsterDATA {
     MonsterSpecies.FANGED_WYVERN,
     [ElementType.THUNDER],
     [ElementType.ICE, ElementType.WATER, ElementType.FIRE, ElementType.DRAGON],
-    [], // TODO reward from other referential,
+    [
+      new MonsterReward(ItemDATA.ITEM_103, [
+        new MonsterRewardCondition(Rank.LOW, 1, 37),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_104, [
+        new MonsterRewardCondition(Rank.LOW, 1, 33),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_106, [
+        new MonsterRewardCondition(Rank.LOW, 1, 31),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_460, [
+        new MonsterRewardCondition(Rank.LOW, 1, 28),
+        new MonsterRewardCondition(Rank.HIGH, 1, 24),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_461, [
+        new MonsterRewardCondition(Rank.LOW, 1, 36),
+        new MonsterRewardCondition(Rank.HIGH, 2, 33),
+        new MonsterRewardCondition(Rank.MASTER, 2, 27),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_107, [
+        new MonsterRewardCondition(Rank.LOW, 1, 1),
+        new MonsterRewardCondition(Rank.HIGH, 1, 2),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_105, [
+        new MonsterRewardCondition(Rank.LOW, 1, 14),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_459, [
+        new MonsterRewardCondition(Rank.LOW, 1, 56),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1006, [
+        new MonsterRewardCondition(Rank.LOW, 1, 50),
+        new MonsterRewardCondition(Rank.HIGH, 1, 15),
+        new MonsterRewardCondition(Rank.MASTER, 1, 10),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_298, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 37),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_299, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 32),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_302, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 31),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_303, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 1),
+        new MonsterRewardCondition(Rank.MASTER, 1, 2),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_301, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 14),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_300, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 53),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1007, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 35),
+        new MonsterRewardCondition(Rank.MASTER, 1, 40),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2095, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 37),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2096, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 32),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2100, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 32),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2099, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 25),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2101, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 1),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2098, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 14),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2097, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 54),
+      ]),
+    ],
     4500,
     4500,
     4700,
@@ -343,7 +910,65 @@ export namespace MonsterDATA {
     MonsterSpecies.BIRD_WYNVERN,
     [ElementType.DRAGON],
     [ElementType.WATER, ElementType.THUNDER],
-    [], // TODO reward from other referential,
+    [
+      new MonsterReward(ItemDATA.ITEM_519, [
+        new MonsterRewardCondition(Rank.LOW, 1, 38),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_518, [
+        new MonsterRewardCondition(Rank.LOW, 1, 28),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_520, [
+        new MonsterRewardCondition(Rank.LOW, 1, 45),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_437, [
+        new MonsterRewardCondition(Rank.LOW, 1, 44),
+        new MonsterRewardCondition(Rank.HIGH, 1, 41),
+        new MonsterRewardCondition(Rank.MASTER, 2, 39),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_417, [
+        new MonsterRewardCondition(Rank.LOW, 1, 12),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1006, [
+        new MonsterRewardCondition(Rank.LOW, 1, 50),
+        new MonsterRewardCondition(Rank.HIGH, 1, 30),
+        new MonsterRewardCondition(Rank.MASTER, 1, 20),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_522, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 38),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_521, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 28),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_523, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 45),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_420, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 13),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_426, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 1),
+        new MonsterRewardCondition(Rank.MASTER, 1, 4),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1007, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 20),
+        new MonsterRewardCondition(Rank.MASTER, 1, 30),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2249, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 39),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2248, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 29),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2250, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 45),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_422, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 13),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2380, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 1),
+      ]),
+    ],
     3000,
     3000,
     3000,
@@ -369,7 +994,80 @@ export namespace MonsterDATA {
       ElementType.BLAST,
       ElementType.STUN,
     ],
-    [], // TODO reward from other referential,
+    [
+      new MonsterReward(ItemDATA.ITEM_141, [
+        new MonsterRewardCondition(Rank.LOW, 1, 25),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_142, [
+        new MonsterRewardCondition(Rank.LOW, 1, 42),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_144, [
+        new MonsterRewardCondition(Rank.LOW, 1, 19),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_145, [
+        new MonsterRewardCondition(Rank.LOW, 1, 25),
+        new MonsterRewardCondition(Rank.HIGH, 1, 21),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_146, [
+        new MonsterRewardCondition(Rank.LOW, 1, 1),
+        new MonsterRewardCondition(Rank.HIGH, 1, 2),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_102, [
+        new MonsterRewardCondition(Rank.LOW, 1, 14),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_143, [
+        new MonsterRewardCondition(Rank.LOW, 1, 16),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1006, [
+        new MonsterRewardCondition(Rank.LOW, 1, 50),
+        new MonsterRewardCondition(Rank.HIGH, 1, 15),
+        new MonsterRewardCondition(Rank.MASTER, 1, 10),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_646, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 24),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_645, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 41),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_648, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 17),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_649, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 1),
+        new MonsterRewardCondition(Rank.MASTER, 1, 2),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_445, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 13),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_647, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 15),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1007, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 35),
+        new MonsterRewardCondition(Rank.MASTER, 1, 40),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2262, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 24),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2261, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 41),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2264, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 18),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2265, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 23),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2266, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 1),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2375, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 13),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2263, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 15),
+      ]),
+    ],
     4000,
     4000,
     4000,
@@ -395,7 +1093,85 @@ export namespace MonsterDATA {
       ElementType.BLAST,
       ElementType.STUN,
     ],
-    [], // TODO reward from other referential,
+    [
+      new MonsterReward(ItemDATA.ITEM_636, [
+        new MonsterRewardCondition(Rank.LOW, 1, 42),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_638, [
+        new MonsterRewardCondition(Rank.LOW, 1, 34),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_640, [
+        new MonsterRewardCondition(Rank.LOW, 1, 28),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_644, [
+        new MonsterRewardCondition(Rank.LOW, 1, 27),
+        new MonsterRewardCondition(Rank.HIGH, 1, 39),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_642, [
+        new MonsterRewardCondition(Rank.LOW, 1, 31),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_438, [
+        new MonsterRewardCondition(Rank.LOW, 1, 11),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_419, [
+        new MonsterRewardCondition(Rank.LOW, 1, 10),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1006, [
+        new MonsterRewardCondition(Rank.LOW, 1, 50),
+        new MonsterRewardCondition(Rank.HIGH, 1, 25),
+        new MonsterRewardCondition(Rank.MASTER, 1, 15),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_637, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 42),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_639, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 34),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_641, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 28),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_643, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 31),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_439, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 11),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_421, [
+        new MonsterRewardCondition(Rank.HIGH, 2, 10),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_426, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 2),
+        new MonsterRewardCondition(Rank.MASTER, 1, 5),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1007, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 25),
+        new MonsterRewardCondition(Rank.MASTER, 1, 35),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2267, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 42),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2268, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 34),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2269, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 28),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2270, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 31),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2271, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 26),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2372, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 11),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2360, [
+        new MonsterRewardCondition(Rank.MASTER, 2, 10),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2380, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 2),
+      ]),
+    ],
     4100,
     4100,
     4100,
@@ -422,7 +1198,69 @@ export namespace MonsterDATA {
       ElementType.SLEEP,
       ElementType.STUN,
     ],
-    [], // TODO reward from other referential,
+    [
+      new MonsterReward(ItemDATA.ITEM_628, [
+        new MonsterRewardCondition(Rank.LOW, 1, 49),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_630, [
+        new MonsterRewardCondition(Rank.LOW, 1, 36),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_634, [
+        new MonsterRewardCondition(Rank.LOW, 1, 20),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_632, [
+        new MonsterRewardCondition(Rank.LOW, 1, 44),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_418, [
+        new MonsterRewardCondition(Rank.LOW, 1, 14),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1006, [
+        new MonsterRewardCondition(Rank.LOW, 1, 50),
+        new MonsterRewardCondition(Rank.HIGH, 1, 30),
+        new MonsterRewardCondition(Rank.MASTER, 1, 20),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_629, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 41),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_631, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 43),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_635, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 19),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_633, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 44),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_420, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 12),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_426, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 2),
+        new MonsterRewardCondition(Rank.MASTER, 1, 6),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1007, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 20),
+        new MonsterRewardCondition(Rank.MASTER, 1, 30),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2272, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 42),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2273, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 42),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2275, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 19),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2274, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 45),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_422, [
+        new MonsterRewardCondition(Rank.MASTER, 2, 10),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2380, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 2),
+      ]),
+    ],
     3300,
     3300,
     3300,
@@ -449,7 +1287,58 @@ export namespace MonsterDATA {
       ElementType.BLAST,
       ElementType.STUN,
     ],
-    [], // TODO reward from other referential,
+    [
+      new MonsterReward(ItemDATA.ITEM_622, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 39),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_621, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 46),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_623, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 19),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_624, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 36),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_421, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 12),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_451, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 16),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_427, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 2),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1006, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 25),
+        new MonsterRewardCondition(Rank.MASTER, 1, 15),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1007, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 25),
+        new MonsterRewardCondition(Rank.MASTER, 1, 35),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2277, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 39),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2276, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 46),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2278, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 19),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2279, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 36),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2360, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 12),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2378, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 16),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2381, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 1),
+      ]),
+    ],
     4500,
     4500,
     4500,
@@ -475,7 +1364,75 @@ export namespace MonsterDATA {
       ElementType.BLAST,
       ElementType.STUN,
     ],
-    [], // TODO reward from other referential,
+    [
+      new MonsterReward(ItemDATA.ITEM_614, [
+        new MonsterRewardCondition(Rank.LOW, 1, 30),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_612, [
+        new MonsterRewardCondition(Rank.LOW, 1, 39),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_616, [
+        new MonsterRewardCondition(Rank.LOW, 1, 21),
+        new MonsterRewardCondition(Rank.HIGH, 2, 12),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_617, [
+        new MonsterRewardCondition(Rank.LOW, 1, 18),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_619, [
+        new MonsterRewardCondition(Rank.LOW, 1, 62),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_446, [
+        new MonsterRewardCondition(Rank.LOW, 1, 12),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1006, [
+        new MonsterRewardCondition(Rank.LOW, 1, 50),
+        new MonsterRewardCondition(Rank.HIGH, 1, 20),
+        new MonsterRewardCondition(Rank.MASTER, 1, 15),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_615, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 31),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_613, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 41),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_618, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 20),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_620, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 62),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_447, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 14),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_427, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 1),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1007, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 30),
+        new MonsterRewardCondition(Rank.MASTER, 1, 35),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2281, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 30),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2280, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 39),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2283, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 18),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2284, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 62),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2376, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 14),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2381, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 1),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2282, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 21),
+      ]),
+    ],
     5200,
     5200,
     5200,
@@ -501,10 +1458,58 @@ export namespace MonsterDATA {
       ElementType.BLAST,
       ElementType.STUN,
     ],
-    [], // TODO reward from other referential,
-    4600, // TODO health from other referential,
-    4600, // TODO health from other referential,
-    4600, // TODO health from other referential,
+    [
+      new MonsterReward(ItemDATA.ITEM_650, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 42),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_651, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 34),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_654, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 16),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_653, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 24),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_655, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 42),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_656, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 1),
+        new MonsterRewardCondition(Rank.MASTER, 1, 4),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_652, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 41),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_1007, [
+        new MonsterRewardCondition(Rank.HIGH, 1, 50),
+        new MonsterRewardCondition(Rank.MASTER, 1, 50),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2289, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 42),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2285, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 34),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2290, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 16),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2286, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 24),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2287, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 42),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2295, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 1),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2291, [
+        new MonsterRewardCondition(Rank.MASTER, 1, 41),
+      ]),
+    ],
+    4600,
+    4600,
+    4600,
     Rank.LOW,
     ""
   );

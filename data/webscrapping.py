@@ -2,92 +2,136 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-
 def extract_numeric_value(text):
-    # Supprimer tous les caractères non numériques du texte
     numeric_text = ''.join(filter(str.isdigit, text))
-    # Convertir le texte numérique en entier
     numeric_value = int(numeric_text)
     return numeric_value
 
 def extract_quantity(td_text):
-    # Utiliser une expression régulière pour extraire la quantité (par exemple, "1x")
     match = re.search(r'(\d+)x', td_text)
     if match:
         return match.group(1)
     else:
         return None
 
-def gestion_section(reward_section):
-    # Trouver tous les tableaux à l'intérieur de la section
+def extract_item_id(href):
+    match = re.search(r'item/normal_(\d+)\.html', href)
+    if match:
+        return match.group(1)
+    else:
+        return None
+
+def format_output(data):
+    for itemId, itemValue in data.items():
+        #print(itemId, itemValue)
+        print('new MonsterReward(ItemDATA.ITEM_'+str(int(itemId)),', [')
+        
+        for rankId, rankValue in itemValue.items():
+            rank = 'Rank.LOW'
+            if rankId == 'hr' :
+                 rank = 'Rank.HIGH'
+            if rankId == 'mr' :
+                 rank = 'Rank.MASTER'
+            print('new MonsterRewardCondition(',rank,',', round(int(rankValue['quantity'])),',', round(int(rankValue['percent'])),'),')
+                
+        print(']),')
+
+              
+
+##        new MonsterReward(ItemDATA.ITEM_363, [
+##            new MonsterRewardCondition(Rank.LOW, 1, 30),
+##            new MonsterRewardCondition(Rank.HIGH, 1, 30),
+##            new MonsterRewardCondition(Rank.MASTER, 1, 35),
+##        ]),
+
+def gestion_section(reward_section, data, rank):
     tables = reward_section.find_all('table')
 
-    # Parcourir tous les tableaux
     for table in tables:
-        # Imprimer le contenu de chaque tableau
-        #print(table.prettify())
         lignes = table.find_all('tr')
 
         for ligne in lignes:
             lignesTD = ligne.find_all('td')
-            #print(len(lignesTD))
-            if len(lignesTD) == 2 :
-                #print(lignesTD[0])
+
+            if len(lignesTD) == 2:
                 print(extract_quantity(lignesTD[0].text))
                 print(extract_numeric_value(lignesTD[1].text))
                 a_element = lignesTD[0].find('a')
-                # Vérifier si la balise <a> a été trouvée
+
                 if a_element:
-                    # Extraire le lien href
                     href = a_element.get('href')
-                    print(href)
-            if len(lignesTD) == 3 : 
-                #print(lignesTD[1])
+                    identifiant = extract_item_id(href)
+                    print(identifiant)
+                    if identifiant in data:
+                        if rank in data[identifiant]:
+                            data[identifiant][rank] = {
+                                'quantity': (int(data[identifiant][rank]['quantity']) + int(extract_quantity(lignesTD[0].text))) / 2,
+                                'percent': (int(data[identifiant][rank]['percent']) + int(extract_numeric_value(lignesTD[1].text))) / 2
+                            }
+                        else:
+                            data[identifiant][rank] = {
+                                'quantity': extract_quantity(lignesTD[0].text),
+                                'percent': extract_numeric_value(lignesTD[1].text)
+                            }
+                    else:
+                        data[identifiant] = {rank: {'quantity': extract_quantity(lignesTD[0].text),
+                                                    'percent': extract_numeric_value(lignesTD[1].text)}}
+
+            if len(lignesTD) == 3:
                 print(extract_quantity(lignesTD[1].text))
                 print(extract_numeric_value(lignesTD[2].text))
                 a_element = lignesTD[1].find('a')
-                # Vérifier si la balise <a> a été trouvée
-                if a_element:
-                    # Extraire le lien href
-                    href = a_element.get('href')
-                    print(href)
 
-url = "https://mhrise.mhrice.info/small-monster/013_00.html"
+                if a_element:
+                    href = a_element.get('href')
+                    identifiant = extract_item_id(href)
+                    print(identifiant)
+                    if identifiant in data:
+                        if rank in data[identifiant]:
+                            data[identifiant][rank] = {
+                                'quantity': (int(data[identifiant][rank]['quantity']) + int(extract_quantity(lignesTD[1].text))) / 2,
+                                'percent': (int(data[identifiant][rank]['percent']) + int(extract_numeric_value(lignesTD[2].text))) / 2
+                            }
+                        else:
+                            data[identifiant][rank] = {
+                                'quantity': extract_quantity(lignesTD[1].text),
+                                'percent': extract_numeric_value(lignesTD[2].text)
+                            }
+                    else:
+                        data[identifiant] = {rank: {'quantity': extract_quantity(lignesTD[1].text),
+                                                    'percent': extract_numeric_value(lignesTD[2].text)}}
+
+url = "https://mhrise.mhrice.info/monster/001_00.html"
+data = {}
 
 try:
     response = requests.get(url)
 
-    # Vérifier si la requête a réussi (code 200)
     if response.status_code == 200:
-        # Utiliser BeautifulSoup pour parser le contenu HTML
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        # Trouver la section avec l'ID "s-reward-lr"
-        reward_section = soup.find(id='s-reward-lr')
-        # Vérifier si la section a été trouvée
-        if reward_section:
+        reward_section_lr = soup.find(id='s-reward-lr')
+        if reward_section_lr:
             print("Section low")
-            gestion_section(reward_section)            
+            gestion_section(reward_section_lr, data, 'lr')
         else:
             print("Section low introuvable.")
 
-        # Trouver la section avec l'ID "s-reward-lr"
-        reward_section = soup.find(id='s-reward-hr')
-        # Vérifier si la section a été trouvée
-        if reward_section:
+        reward_section_hr = soup.find(id='s-reward-hr')
+        if reward_section_hr:
             print("Section high")
-            gestion_section(reward_section)            
+            gestion_section(reward_section_hr, data, 'hr')
         else:
             print("Section high introuvable.")
 
-        # Trouver la section avec l'ID "s-reward-lr"
-        reward_section = soup.find(id='s-reward-mr')
-        # Vérifier si la section a été trouvée
-        if reward_section:
+        reward_section_mr = soup.find(id='s-reward-mr')
+        if reward_section_mr:
             print("Section master")
-            gestion_section(reward_section)            
+            gestion_section(reward_section_mr, data, 'mr')
         else:
             print("Section master introuvable.")
+
+        format_output(data)
 
     else:
         print(f"Erreur de requête HTTP: {response.status_code}")
