@@ -51,7 +51,7 @@ export class MonsterState {
 
   static monsterById(id: number) {
     return createSelector([MonsterState], (state: MonsterStateModel) => {
-      return state.monsters.get(id);
+      return state.monsters.get(id)?.clone();
     });
   }
 }

@@ -29,93 +29,93 @@ export namespace MonsterDATA {
       ElementType.STUN,
     ],
     [
-      new MonsterReward(ItemDATA.ITEM_92, [
+      new MonsterReward(ItemDATA.ITEM_92.clone().clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 41),
       ]),
-      new MonsterReward(ItemDATA.ITEM_93, [
+      new MonsterReward(ItemDATA.ITEM_93.clone().clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 30),
       ]),
-      new MonsterReward(ItemDATA.ITEM_94, [
+      new MonsterReward(ItemDATA.ITEM_94.clone().clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 20),
         new MonsterRewardCondition(Rank.HIGH, 2, 13),
       ]),
-      new MonsterReward(ItemDATA.ITEM_95, [
+      new MonsterReward(ItemDATA.ITEM_95.clone().clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 13),
       ]),
-      new MonsterReward(ItemDATA.ITEM_102, [
+      new MonsterReward(ItemDATA.ITEM_102.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 15),
       ]),
-      new MonsterReward(ItemDATA.ITEM_419, [
+      new MonsterReward(ItemDATA.ITEM_419.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 13),
       ]),
-      new MonsterReward(ItemDATA.ITEM_96, [
+      new MonsterReward(ItemDATA.ITEM_96.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 1),
         new MonsterRewardCondition(Rank.HIGH, 1, 2),
       ]),
-      new MonsterReward(ItemDATA.ITEM_101, [
+      new MonsterReward(ItemDATA.ITEM_101.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 5),
         new MonsterRewardCondition(Rank.HIGH, 1, 11),
       ]),
-      new MonsterReward(ItemDATA.ITEM_457, [
+      new MonsterReward(ItemDATA.ITEM_457.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 31),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1006, [
+      new MonsterReward(ItemDATA.ITEM_1006.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 50),
         new MonsterRewardCondition(Rank.HIGH, 1, 20),
         new MonsterRewardCondition(Rank.MASTER, 1, 15),
       ]),
-      new MonsterReward(ItemDATA.ITEM_294, [
+      new MonsterReward(ItemDATA.ITEM_294.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 40),
       ]),
-      new MonsterReward(ItemDATA.ITEM_295, [
+      new MonsterReward(ItemDATA.ITEM_295.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 29),
       ]),
-      new MonsterReward(ItemDATA.ITEM_296, [
+      new MonsterReward(ItemDATA.ITEM_296.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 13),
       ]),
-      new MonsterReward(ItemDATA.ITEM_445, [
+      new MonsterReward(ItemDATA.ITEM_445.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 19),
       ]),
-      new MonsterReward(ItemDATA.ITEM_421, [
+      new MonsterReward(ItemDATA.ITEM_421.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 12),
       ]),
-      new MonsterReward(ItemDATA.ITEM_297, [
+      new MonsterReward(ItemDATA.ITEM_297.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 1),
         new MonsterRewardCondition(Rank.MASTER, 1, 1),
       ]),
-      new MonsterReward(ItemDATA.ITEM_458, [
+      new MonsterReward(ItemDATA.ITEM_458.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 4),
         new MonsterRewardCondition(Rank.MASTER, 1, 12),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1028, [
+      new MonsterReward(ItemDATA.ITEM_1028.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 30),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1007, [
+      new MonsterReward(ItemDATA.ITEM_1007.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 30),
         new MonsterRewardCondition(Rank.MASTER, 1, 35),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2007, [
+      new MonsterReward(ItemDATA.ITEM_2007.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 40),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2006, [
+      new MonsterReward(ItemDATA.ITEM_2006.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 29),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2008, [
+      new MonsterReward(ItemDATA.ITEM_2008.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 19),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2009, [
+      new MonsterReward(ItemDATA.ITEM_2009.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 13),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2375, [
+      new MonsterReward(ItemDATA.ITEM_2375.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 16),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2360, [
+      new MonsterReward(ItemDATA.ITEM_2360.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 12),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2010, [
+      new MonsterReward(ItemDATA.ITEM_2010.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 1),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2016, [
+      new MonsterReward(ItemDATA.ITEM_2016.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 31),
       ]),
     ],
@@ -145,84 +145,84 @@ export namespace MonsterDATA {
       ElementType.STUN,
     ],
     [
-      new MonsterReward(ItemDATA.ITEM_97, [
+      new MonsterReward(ItemDATA.ITEM_97.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 39),
       ]),
-      new MonsterReward(ItemDATA.ITEM_98, [
+      new MonsterReward(ItemDATA.ITEM_98.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 33),
       ]),
-      new MonsterReward(ItemDATA.ITEM_99, [
+      new MonsterReward(ItemDATA.ITEM_99.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 24),
       ]),
-      new MonsterReward(ItemDATA.ITEM_464, [
+      new MonsterReward(ItemDATA.ITEM_464.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 28),
         new MonsterRewardCondition(Rank.HIGH, 1, 36),
       ]),
-      new MonsterReward(ItemDATA.ITEM_102, [
+      new MonsterReward(ItemDATA.ITEM_102.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 13),
       ]),
-      new MonsterReward(ItemDATA.ITEM_101, [
+      new MonsterReward(ItemDATA.ITEM_101.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 9),
         new MonsterRewardCondition(Rank.HIGH, 1, 15),
       ]),
-      new MonsterReward(ItemDATA.ITEM_100, [
+      new MonsterReward(ItemDATA.ITEM_100.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 1),
         new MonsterRewardCondition(Rank.HIGH, 1, 2),
       ]),
-      new MonsterReward(ItemDATA.ITEM_457, [
+      new MonsterReward(ItemDATA.ITEM_457.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 24),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1006, [
+      new MonsterReward(ItemDATA.ITEM_1006.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 50),
         new MonsterRewardCondition(Rank.HIGH, 1, 15),
         new MonsterRewardCondition(Rank.MASTER, 1, 10),
       ]),
-      new MonsterReward(ItemDATA.ITEM_310, [
+      new MonsterReward(ItemDATA.ITEM_310.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 38),
       ]),
-      new MonsterReward(ItemDATA.ITEM_311, [
+      new MonsterReward(ItemDATA.ITEM_311.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 29),
       ]),
-      new MonsterReward(ItemDATA.ITEM_312, [
+      new MonsterReward(ItemDATA.ITEM_312.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 24),
       ]),
-      new MonsterReward(ItemDATA.ITEM_445, [
+      new MonsterReward(ItemDATA.ITEM_445.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 13),
       ]),
-      new MonsterReward(ItemDATA.ITEM_458, [
+      new MonsterReward(ItemDATA.ITEM_458.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 9),
         new MonsterRewardCondition(Rank.MASTER, 1, 10),
       ]),
-      new MonsterReward(ItemDATA.ITEM_313, [
+      new MonsterReward(ItemDATA.ITEM_313.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 1),
         new MonsterRewardCondition(Rank.MASTER, 1, 1),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1028, [
+      new MonsterReward(ItemDATA.ITEM_1028.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 23),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1007, [
+      new MonsterReward(ItemDATA.ITEM_1007.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 35),
         new MonsterRewardCondition(Rank.MASTER, 1, 40),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2011, [
+      new MonsterReward(ItemDATA.ITEM_2011.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 38),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2012, [
+      new MonsterReward(ItemDATA.ITEM_2012.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 31),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2014, [
+      new MonsterReward(ItemDATA.ITEM_2014.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 25),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2375, [
+      new MonsterReward(ItemDATA.ITEM_2375.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 13),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2013, [
+      new MonsterReward(ItemDATA.ITEM_2013.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 25),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2015, [
+      new MonsterReward(ItemDATA.ITEM_2015.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 1),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2016, [
+      new MonsterReward(ItemDATA.ITEM_2016.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 23),
       ]),
     ],
@@ -242,24 +242,24 @@ export namespace MonsterDATA {
     [],
     [ElementType.FIRE, ElementType.WATER, ElementType.THUNDER, ElementType.ICE],
     [
-      new MonsterReward(ItemDATA.ITEM_363, [
+      new MonsterReward(ItemDATA.ITEM_363.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 30),
         new MonsterRewardCondition(Rank.HIGH, 1, 30),
         new MonsterRewardCondition(Rank.MASTER, 1, 35),
       ]),
-      new MonsterReward(ItemDATA.ITEM_434, [
+      new MonsterReward(ItemDATA.ITEM_434.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 45),
       ]),
-      new MonsterReward(ItemDATA.ITEM_122, [
+      new MonsterReward(ItemDATA.ITEM_122.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 10),
         new MonsterRewardCondition(Rank.HIGH, 1, 10),
         new MonsterRewardCondition(Rank.MASTER, 1, 10),
       ]),
-      new MonsterReward(ItemDATA.ITEM_435, [
+      new MonsterReward(ItemDATA.ITEM_435.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 45),
         new MonsterRewardCondition(Rank.MASTER, 1, 10),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2368, [
+      new MonsterReward(ItemDATA.ITEM_2368.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 30),
       ]),
     ],
@@ -279,16 +279,16 @@ export namespace MonsterDATA {
     [],
     [ElementType.FIRE, ElementType.WATER],
     [
-      new MonsterReward(ItemDATA.ITEM_2330, [
+      new MonsterReward(ItemDATA.ITEM_2330.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 40),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2329, [
+      new MonsterReward(ItemDATA.ITEM_2329.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 32),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2331, [
+      new MonsterReward(ItemDATA.ITEM_2331.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 10),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2369, [
+      new MonsterReward(ItemDATA.ITEM_2369.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 18),
       ]),
     ], // TODO reward from other referential,
@@ -334,69 +334,69 @@ export namespace MonsterDATA {
       ElementType.STUN,
     ],
     [
-      new MonsterReward(ItemDATA.ITEM_316, [
+      new MonsterReward(ItemDATA.ITEM_316.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 38),
       ]),
-      new MonsterReward(ItemDATA.ITEM_318, [
+      new MonsterReward(ItemDATA.ITEM_318.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 38),
       ]),
-      new MonsterReward(ItemDATA.ITEM_321, [
+      new MonsterReward(ItemDATA.ITEM_321.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 23),
         new MonsterRewardCondition(Rank.HIGH, 2, 13),
       ]),
-      new MonsterReward(ItemDATA.ITEM_320, [
+      new MonsterReward(ItemDATA.ITEM_320.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 27),
         new MonsterRewardCondition(Rank.HIGH, 1, 23),
       ]),
-      new MonsterReward(ItemDATA.ITEM_454, [
+      new MonsterReward(ItemDATA.ITEM_454.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 19),
         new MonsterRewardCondition(Rank.HIGH, 2, 16),
         new MonsterRewardCondition(Rank.MASTER, 2, 16),
       ]),
-      new MonsterReward(ItemDATA.ITEM_322, [
+      new MonsterReward(ItemDATA.ITEM_322.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 14),
         new MonsterRewardCondition(Rank.HIGH, 1, 11),
       ]),
-      new MonsterReward(ItemDATA.ITEM_314, [
+      new MonsterReward(ItemDATA.ITEM_314.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 100),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1006, [
+      new MonsterReward(ItemDATA.ITEM_1006.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 50),
         new MonsterRewardCondition(Rank.HIGH, 1, 10),
       ]),
-      new MonsterReward(ItemDATA.ITEM_317, [
+      new MonsterReward(ItemDATA.ITEM_317.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 41),
       ]),
-      new MonsterReward(ItemDATA.ITEM_319, [
+      new MonsterReward(ItemDATA.ITEM_319.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 37),
       ]),
-      new MonsterReward(ItemDATA.ITEM_323, [
+      new MonsterReward(ItemDATA.ITEM_323.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 14),
         new MonsterRewardCondition(Rank.MASTER, 1, 9),
       ]),
-      new MonsterReward(ItemDATA.ITEM_427, [
+      new MonsterReward(ItemDATA.ITEM_427.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 2),
       ]),
-      new MonsterReward(ItemDATA.ITEM_315, [
+      new MonsterReward(ItemDATA.ITEM_315.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 100),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1007, [
+      new MonsterReward(ItemDATA.ITEM_1007.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 40),
         new MonsterRewardCondition(Rank.MASTER, 1, 50),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2026, [
+      new MonsterReward(ItemDATA.ITEM_2026.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 46),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2024, [
+      new MonsterReward(ItemDATA.ITEM_2024.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 44),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2025, [
+      new MonsterReward(ItemDATA.ITEM_2025.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 26),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2381, [
+      new MonsterReward(ItemDATA.ITEM_2381.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 2),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2027, [
+      new MonsterReward(ItemDATA.ITEM_2027.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 100),
       ]),
     ],
@@ -425,60 +425,60 @@ export namespace MonsterDATA {
       ElementType.STUN,
     ],
     [
-      new MonsterReward(ItemDATA.ITEM_347, [
+      new MonsterReward(ItemDATA.ITEM_347.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 35),
       ]),
-      new MonsterReward(ItemDATA.ITEM_348, [
+      new MonsterReward(ItemDATA.ITEM_348.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 32),
       ]),
-      new MonsterReward(ItemDATA.ITEM_352, [
+      new MonsterReward(ItemDATA.ITEM_352.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 19),
       ]),
-      new MonsterReward(ItemDATA.ITEM_349, [
+      new MonsterReward(ItemDATA.ITEM_349.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 42),
       ]),
-      new MonsterReward(ItemDATA.ITEM_351, [
+      new MonsterReward(ItemDATA.ITEM_351.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 46),
       ]),
-      new MonsterReward(ItemDATA.ITEM_353, [
+      new MonsterReward(ItemDATA.ITEM_353.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 1),
         new MonsterRewardCondition(Rank.MASTER, 1, 5),
       ]),
-      new MonsterReward(ItemDATA.ITEM_350, [
+      new MonsterReward(ItemDATA.ITEM_350.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 48),
       ]),
-      new MonsterReward(ItemDATA.ITEM_436, [
+      new MonsterReward(ItemDATA.ITEM_436.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 15),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1012, [
+      new MonsterReward(ItemDATA.ITEM_1012.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 40),
         new MonsterRewardCondition(Rank.MASTER, 1, 15),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2046, [
+      new MonsterReward(ItemDATA.ITEM_2046.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 40),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2047, [
+      new MonsterReward(ItemDATA.ITEM_2047.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 26),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2051, [
+      new MonsterReward(ItemDATA.ITEM_2051.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 19),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2048, [
+      new MonsterReward(ItemDATA.ITEM_2048.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 41),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2050, [
+      new MonsterReward(ItemDATA.ITEM_2050.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 46),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2382, [
+      new MonsterReward(ItemDATA.ITEM_2382.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 1),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2049, [
+      new MonsterReward(ItemDATA.ITEM_2049.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 50),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2379, [
+      new MonsterReward(ItemDATA.ITEM_2379.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 15),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2383, [
+      new MonsterReward(ItemDATA.ITEM_2383.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 25),
       ]),
     ],
@@ -506,60 +506,60 @@ export namespace MonsterDATA {
       ElementType.WATER,
     ],
     [
-      new MonsterReward(ItemDATA.ITEM_341, [
+      new MonsterReward(ItemDATA.ITEM_341.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 36),
       ]),
-      new MonsterReward(ItemDATA.ITEM_343, [
+      new MonsterReward(ItemDATA.ITEM_343.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 26),
       ]),
-      new MonsterReward(ItemDATA.ITEM_625, [
+      new MonsterReward(ItemDATA.ITEM_625.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 49),
       ]),
-      new MonsterReward(ItemDATA.ITEM_345, [
+      new MonsterReward(ItemDATA.ITEM_345.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 46),
       ]),
-      new MonsterReward(ItemDATA.ITEM_346, [
+      new MonsterReward(ItemDATA.ITEM_346.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 1),
         new MonsterRewardCondition(Rank.MASTER, 1, 5),
       ]),
-      new MonsterReward(ItemDATA.ITEM_698, [
+      new MonsterReward(ItemDATA.ITEM_698.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 20),
       ]),
-      new MonsterReward(ItemDATA.ITEM_342, [
+      new MonsterReward(ItemDATA.ITEM_342.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 31),
       ]),
-      new MonsterReward(ItemDATA.ITEM_436, [
+      new MonsterReward(ItemDATA.ITEM_436.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 17),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1012, [
+      new MonsterReward(ItemDATA.ITEM_1012.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 40),
         new MonsterRewardCondition(Rank.MASTER, 1, 15),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2052, [
+      new MonsterReward(ItemDATA.ITEM_2052.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 36),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2054, [
+      new MonsterReward(ItemDATA.ITEM_2054.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 26),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2056, [
+      new MonsterReward(ItemDATA.ITEM_2056.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 49),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2055, [
+      new MonsterReward(ItemDATA.ITEM_2055.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 46),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2382, [
+      new MonsterReward(ItemDATA.ITEM_2382.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 1),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2053, [
+      new MonsterReward(ItemDATA.ITEM_2053.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 32),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2379, [
+      new MonsterReward(ItemDATA.ITEM_2379.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 17),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2684, [
+      new MonsterReward(ItemDATA.ITEM_2684.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 21),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2383, [
+      new MonsterReward(ItemDATA.ITEM_2383.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 25),
       ]),
     ],
@@ -589,68 +589,68 @@ export namespace MonsterDATA {
       ElementType.STUN,
     ],
     [
-      new MonsterReward(ItemDATA.ITEM_354, [
+      new MonsterReward(ItemDATA.ITEM_354.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 30),
       ]),
-      new MonsterReward(ItemDATA.ITEM_358, [
+      new MonsterReward(ItemDATA.ITEM_358.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 22),
       ]),
-      new MonsterReward(ItemDATA.ITEM_355, [
+      new MonsterReward(ItemDATA.ITEM_355.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 19),
         new MonsterRewardCondition(Rank.MASTER, 1, 12),
       ]),
-      new MonsterReward(ItemDATA.ITEM_359, [
+      new MonsterReward(ItemDATA.ITEM_359.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 16),
       ]),
-      new MonsterReward(ItemDATA.ITEM_361, [
+      new MonsterReward(ItemDATA.ITEM_361.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 25),
         new MonsterRewardCondition(Rank.MASTER, 2, 18),
       ]),
-      new MonsterReward(ItemDATA.ITEM_356, [
+      new MonsterReward(ItemDATA.ITEM_356.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 46),
       ]),
-      new MonsterReward(ItemDATA.ITEM_362, [
+      new MonsterReward(ItemDATA.ITEM_362.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 1),
         new MonsterRewardCondition(Rank.MASTER, 1, 5),
       ]),
-      new MonsterReward(ItemDATA.ITEM_360, [
+      new MonsterReward(ItemDATA.ITEM_360.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 40),
       ]),
-      new MonsterReward(ItemDATA.ITEM_357, [
+      new MonsterReward(ItemDATA.ITEM_357.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 40),
       ]),
-      new MonsterReward(ItemDATA.ITEM_436, [
+      new MonsterReward(ItemDATA.ITEM_436.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 10),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1012, [
+      new MonsterReward(ItemDATA.ITEM_1012.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 40),
         new MonsterRewardCondition(Rank.MASTER, 1, 15),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2057, [
+      new MonsterReward(ItemDATA.ITEM_2057.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 37),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2060, [
+      new MonsterReward(ItemDATA.ITEM_2060.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 26),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2061, [
+      new MonsterReward(ItemDATA.ITEM_2061.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 17),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2058, [
+      new MonsterReward(ItemDATA.ITEM_2058.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 46),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2382, [
+      new MonsterReward(ItemDATA.ITEM_2382.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 1),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2062, [
+      new MonsterReward(ItemDATA.ITEM_2062.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 40),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2059, [
+      new MonsterReward(ItemDATA.ITEM_2059.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 44),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2379, [
+      new MonsterReward(ItemDATA.ITEM_2379.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 10),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2383, [
+      new MonsterReward(ItemDATA.ITEM_2383.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 25),
       ]),
     ],
@@ -696,76 +696,76 @@ export namespace MonsterDATA {
       ElementType.STUN,
     ],
     [
-      new MonsterReward(ItemDATA.ITEM_240, [
+      new MonsterReward(ItemDATA.ITEM_240.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 41),
       ]),
-      new MonsterReward(ItemDATA.ITEM_242, [
+      new MonsterReward(ItemDATA.ITEM_242.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 18),
       ]),
-      new MonsterReward(ItemDATA.ITEM_244, [
+      new MonsterReward(ItemDATA.ITEM_244.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 39),
       ]),
-      new MonsterReward(ItemDATA.ITEM_246, [
+      new MonsterReward(ItemDATA.ITEM_246.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 28),
         new MonsterRewardCondition(Rank.HIGH, 1, 23),
       ]),
-      new MonsterReward(ItemDATA.ITEM_247, [
+      new MonsterReward(ItemDATA.ITEM_247.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 25),
         new MonsterRewardCondition(Rank.HIGH, 1, 20),
       ]),
-      new MonsterReward(ItemDATA.ITEM_248, [
+      new MonsterReward(ItemDATA.ITEM_248.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 32),
       ]),
-      new MonsterReward(ItemDATA.ITEM_418, [
+      new MonsterReward(ItemDATA.ITEM_418.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 10),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1006, [
+      new MonsterReward(ItemDATA.ITEM_1006.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 50),
         new MonsterRewardCondition(Rank.HIGH, 1, 20),
         new MonsterRewardCondition(Rank.MASTER, 1, 15),
       ]),
-      new MonsterReward(ItemDATA.ITEM_241, [
+      new MonsterReward(ItemDATA.ITEM_241.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 41),
       ]),
-      new MonsterReward(ItemDATA.ITEM_243, [
+      new MonsterReward(ItemDATA.ITEM_243.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 18),
       ]),
-      new MonsterReward(ItemDATA.ITEM_245, [
+      new MonsterReward(ItemDATA.ITEM_245.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 39),
       ]),
-      new MonsterReward(ItemDATA.ITEM_659, [
+      new MonsterReward(ItemDATA.ITEM_659.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 32),
         new MonsterRewardCondition(Rank.MASTER, 2, 23),
       ]),
-      new MonsterReward(ItemDATA.ITEM_421, [
+      new MonsterReward(ItemDATA.ITEM_421.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 11),
       ]),
-      new MonsterReward(ItemDATA.ITEM_427, [
+      new MonsterReward(ItemDATA.ITEM_427.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 2),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1007, [
+      new MonsterReward(ItemDATA.ITEM_1007.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 30),
         new MonsterRewardCondition(Rank.MASTER, 1, 35),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2083, [
+      new MonsterReward(ItemDATA.ITEM_2083.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 51),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2084, [
+      new MonsterReward(ItemDATA.ITEM_2084.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 29),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2085, [
+      new MonsterReward(ItemDATA.ITEM_2085.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 45),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2086, [
+      new MonsterReward(ItemDATA.ITEM_2086.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 23),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2087, [
+      new MonsterReward(ItemDATA.ITEM_2087.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 20),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2360, [
+      new MonsterReward(ItemDATA.ITEM_2360.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 11),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2381, [
+      new MonsterReward(ItemDATA.ITEM_2381.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 2),
       ]),
     ],
@@ -817,81 +817,81 @@ export namespace MonsterDATA {
     [ElementType.THUNDER],
     [ElementType.ICE, ElementType.WATER, ElementType.FIRE, ElementType.DRAGON],
     [
-      new MonsterReward(ItemDATA.ITEM_103, [
+      new MonsterReward(ItemDATA.ITEM_103.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 37),
       ]),
-      new MonsterReward(ItemDATA.ITEM_104, [
+      new MonsterReward(ItemDATA.ITEM_104.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 33),
       ]),
-      new MonsterReward(ItemDATA.ITEM_106, [
+      new MonsterReward(ItemDATA.ITEM_106.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 31),
       ]),
-      new MonsterReward(ItemDATA.ITEM_460, [
+      new MonsterReward(ItemDATA.ITEM_460.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 28),
         new MonsterRewardCondition(Rank.HIGH, 1, 24),
       ]),
-      new MonsterReward(ItemDATA.ITEM_461, [
+      new MonsterReward(ItemDATA.ITEM_461.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 36),
         new MonsterRewardCondition(Rank.HIGH, 2, 33),
         new MonsterRewardCondition(Rank.MASTER, 2, 27),
       ]),
-      new MonsterReward(ItemDATA.ITEM_107, [
+      new MonsterReward(ItemDATA.ITEM_107.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 1),
         new MonsterRewardCondition(Rank.HIGH, 1, 2),
       ]),
-      new MonsterReward(ItemDATA.ITEM_105, [
+      new MonsterReward(ItemDATA.ITEM_105.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 14),
       ]),
-      new MonsterReward(ItemDATA.ITEM_459, [
+      new MonsterReward(ItemDATA.ITEM_459.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 56),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1006, [
+      new MonsterReward(ItemDATA.ITEM_1006.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 50),
         new MonsterRewardCondition(Rank.HIGH, 1, 15),
         new MonsterRewardCondition(Rank.MASTER, 1, 10),
       ]),
-      new MonsterReward(ItemDATA.ITEM_298, [
+      new MonsterReward(ItemDATA.ITEM_298.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 37),
       ]),
-      new MonsterReward(ItemDATA.ITEM_299, [
+      new MonsterReward(ItemDATA.ITEM_299.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 32),
       ]),
-      new MonsterReward(ItemDATA.ITEM_302, [
+      new MonsterReward(ItemDATA.ITEM_302.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 31),
       ]),
-      new MonsterReward(ItemDATA.ITEM_303, [
+      new MonsterReward(ItemDATA.ITEM_303.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 1),
         new MonsterRewardCondition(Rank.MASTER, 1, 2),
       ]),
-      new MonsterReward(ItemDATA.ITEM_301, [
+      new MonsterReward(ItemDATA.ITEM_301.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 14),
       ]),
-      new MonsterReward(ItemDATA.ITEM_300, [
+      new MonsterReward(ItemDATA.ITEM_300.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 53),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1007, [
+      new MonsterReward(ItemDATA.ITEM_1007.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 35),
         new MonsterRewardCondition(Rank.MASTER, 1, 40),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2095, [
+      new MonsterReward(ItemDATA.ITEM_2095.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 37),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2096, [
+      new MonsterReward(ItemDATA.ITEM_2096.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 32),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2100, [
+      new MonsterReward(ItemDATA.ITEM_2100.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 32),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2099, [
+      new MonsterReward(ItemDATA.ITEM_2099.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 25),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2101, [
+      new MonsterReward(ItemDATA.ITEM_2101.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 1),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2098, [
+      new MonsterReward(ItemDATA.ITEM_2098.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 14),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2097, [
+      new MonsterReward(ItemDATA.ITEM_2097.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 54),
       ]),
     ],
@@ -911,61 +911,61 @@ export namespace MonsterDATA {
     [ElementType.DRAGON],
     [ElementType.WATER, ElementType.THUNDER],
     [
-      new MonsterReward(ItemDATA.ITEM_519, [
+      new MonsterReward(ItemDATA.ITEM_519.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 38),
       ]),
-      new MonsterReward(ItemDATA.ITEM_518, [
+      new MonsterReward(ItemDATA.ITEM_518.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 28),
       ]),
-      new MonsterReward(ItemDATA.ITEM_520, [
+      new MonsterReward(ItemDATA.ITEM_520.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 45),
       ]),
-      new MonsterReward(ItemDATA.ITEM_437, [
+      new MonsterReward(ItemDATA.ITEM_437.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 44),
         new MonsterRewardCondition(Rank.HIGH, 1, 41),
         new MonsterRewardCondition(Rank.MASTER, 2, 39),
       ]),
-      new MonsterReward(ItemDATA.ITEM_417, [
+      new MonsterReward(ItemDATA.ITEM_417.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 12),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1006, [
+      new MonsterReward(ItemDATA.ITEM_1006.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 50),
         new MonsterRewardCondition(Rank.HIGH, 1, 30),
         new MonsterRewardCondition(Rank.MASTER, 1, 20),
       ]),
-      new MonsterReward(ItemDATA.ITEM_522, [
+      new MonsterReward(ItemDATA.ITEM_522.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 38),
       ]),
-      new MonsterReward(ItemDATA.ITEM_521, [
+      new MonsterReward(ItemDATA.ITEM_521.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 28),
       ]),
-      new MonsterReward(ItemDATA.ITEM_523, [
+      new MonsterReward(ItemDATA.ITEM_523.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 45),
       ]),
-      new MonsterReward(ItemDATA.ITEM_420, [
+      new MonsterReward(ItemDATA.ITEM_420.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 13),
       ]),
-      new MonsterReward(ItemDATA.ITEM_426, [
+      new MonsterReward(ItemDATA.ITEM_426.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 1),
         new MonsterRewardCondition(Rank.MASTER, 1, 4),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1007, [
+      new MonsterReward(ItemDATA.ITEM_1007.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 20),
         new MonsterRewardCondition(Rank.MASTER, 1, 30),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2249, [
+      new MonsterReward(ItemDATA.ITEM_2249.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 39),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2248, [
+      new MonsterReward(ItemDATA.ITEM_2248.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 29),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2250, [
+      new MonsterReward(ItemDATA.ITEM_2250.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 45),
       ]),
-      new MonsterReward(ItemDATA.ITEM_422, [
+      new MonsterReward(ItemDATA.ITEM_422.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 13),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2380, [
+      new MonsterReward(ItemDATA.ITEM_2380.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 1),
       ]),
     ],
@@ -995,76 +995,76 @@ export namespace MonsterDATA {
       ElementType.STUN,
     ],
     [
-      new MonsterReward(ItemDATA.ITEM_141, [
+      new MonsterReward(ItemDATA.ITEM_141.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 25),
       ]),
-      new MonsterReward(ItemDATA.ITEM_142, [
+      new MonsterReward(ItemDATA.ITEM_142.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 42),
       ]),
-      new MonsterReward(ItemDATA.ITEM_144, [
+      new MonsterReward(ItemDATA.ITEM_144.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 19),
       ]),
-      new MonsterReward(ItemDATA.ITEM_145, [
+      new MonsterReward(ItemDATA.ITEM_145.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 25),
         new MonsterRewardCondition(Rank.HIGH, 1, 21),
       ]),
-      new MonsterReward(ItemDATA.ITEM_146, [
+      new MonsterReward(ItemDATA.ITEM_146.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 1),
         new MonsterRewardCondition(Rank.HIGH, 1, 2),
       ]),
-      new MonsterReward(ItemDATA.ITEM_102, [
+      new MonsterReward(ItemDATA.ITEM_102.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 14),
       ]),
-      new MonsterReward(ItemDATA.ITEM_143, [
+      new MonsterReward(ItemDATA.ITEM_143.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 16),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1006, [
+      new MonsterReward(ItemDATA.ITEM_1006.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 50),
         new MonsterRewardCondition(Rank.HIGH, 1, 15),
         new MonsterRewardCondition(Rank.MASTER, 1, 10),
       ]),
-      new MonsterReward(ItemDATA.ITEM_646, [
+      new MonsterReward(ItemDATA.ITEM_646.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 24),
       ]),
-      new MonsterReward(ItemDATA.ITEM_645, [
+      new MonsterReward(ItemDATA.ITEM_645.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 41),
       ]),
-      new MonsterReward(ItemDATA.ITEM_648, [
+      new MonsterReward(ItemDATA.ITEM_648.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 17),
       ]),
-      new MonsterReward(ItemDATA.ITEM_649, [
+      new MonsterReward(ItemDATA.ITEM_649.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 1),
         new MonsterRewardCondition(Rank.MASTER, 1, 2),
       ]),
-      new MonsterReward(ItemDATA.ITEM_445, [
+      new MonsterReward(ItemDATA.ITEM_445.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 13),
       ]),
-      new MonsterReward(ItemDATA.ITEM_647, [
+      new MonsterReward(ItemDATA.ITEM_647.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 15),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1007, [
+      new MonsterReward(ItemDATA.ITEM_1007.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 35),
         new MonsterRewardCondition(Rank.MASTER, 1, 40),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2262, [
+      new MonsterReward(ItemDATA.ITEM_2262.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 24),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2261, [
+      new MonsterReward(ItemDATA.ITEM_2261.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 41),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2264, [
+      new MonsterReward(ItemDATA.ITEM_2264.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 18),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2265, [
+      new MonsterReward(ItemDATA.ITEM_2265.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 23),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2266, [
+      new MonsterReward(ItemDATA.ITEM_2266.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 1),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2375, [
+      new MonsterReward(ItemDATA.ITEM_2375.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 13),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2263, [
+      new MonsterReward(ItemDATA.ITEM_2263.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 15),
       ]),
     ],
@@ -1094,81 +1094,81 @@ export namespace MonsterDATA {
       ElementType.STUN,
     ],
     [
-      new MonsterReward(ItemDATA.ITEM_636, [
+      new MonsterReward(ItemDATA.ITEM_636.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 42),
       ]),
-      new MonsterReward(ItemDATA.ITEM_638, [
+      new MonsterReward(ItemDATA.ITEM_638.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 34),
       ]),
-      new MonsterReward(ItemDATA.ITEM_640, [
+      new MonsterReward(ItemDATA.ITEM_640.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 28),
       ]),
-      new MonsterReward(ItemDATA.ITEM_644, [
+      new MonsterReward(ItemDATA.ITEM_644.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 27),
         new MonsterRewardCondition(Rank.HIGH, 1, 39),
       ]),
-      new MonsterReward(ItemDATA.ITEM_642, [
+      new MonsterReward(ItemDATA.ITEM_642.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 31),
       ]),
-      new MonsterReward(ItemDATA.ITEM_438, [
+      new MonsterReward(ItemDATA.ITEM_438.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 11),
       ]),
-      new MonsterReward(ItemDATA.ITEM_419, [
+      new MonsterReward(ItemDATA.ITEM_419.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 10),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1006, [
+      new MonsterReward(ItemDATA.ITEM_1006.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 50),
         new MonsterRewardCondition(Rank.HIGH, 1, 25),
         new MonsterRewardCondition(Rank.MASTER, 1, 15),
       ]),
-      new MonsterReward(ItemDATA.ITEM_637, [
+      new MonsterReward(ItemDATA.ITEM_637.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 42),
       ]),
-      new MonsterReward(ItemDATA.ITEM_639, [
+      new MonsterReward(ItemDATA.ITEM_639.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 34),
       ]),
-      new MonsterReward(ItemDATA.ITEM_641, [
+      new MonsterReward(ItemDATA.ITEM_641.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 28),
       ]),
-      new MonsterReward(ItemDATA.ITEM_643, [
+      new MonsterReward(ItemDATA.ITEM_643.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 31),
       ]),
-      new MonsterReward(ItemDATA.ITEM_439, [
+      new MonsterReward(ItemDATA.ITEM_439.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 11),
       ]),
-      new MonsterReward(ItemDATA.ITEM_421, [
+      new MonsterReward(ItemDATA.ITEM_421.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 2, 10),
       ]),
-      new MonsterReward(ItemDATA.ITEM_426, [
+      new MonsterReward(ItemDATA.ITEM_426.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 2),
         new MonsterRewardCondition(Rank.MASTER, 1, 5),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1007, [
+      new MonsterReward(ItemDATA.ITEM_1007.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 25),
         new MonsterRewardCondition(Rank.MASTER, 1, 35),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2267, [
+      new MonsterReward(ItemDATA.ITEM_2267.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 42),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2268, [
+      new MonsterReward(ItemDATA.ITEM_2268.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 34),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2269, [
+      new MonsterReward(ItemDATA.ITEM_2269.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 28),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2270, [
+      new MonsterReward(ItemDATA.ITEM_2270.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 31),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2271, [
+      new MonsterReward(ItemDATA.ITEM_2271.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 26),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2372, [
+      new MonsterReward(ItemDATA.ITEM_2372.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 11),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2360, [
+      new MonsterReward(ItemDATA.ITEM_2360.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 2, 10),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2380, [
+      new MonsterReward(ItemDATA.ITEM_2380.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 2),
       ]),
     ],
@@ -1199,65 +1199,65 @@ export namespace MonsterDATA {
       ElementType.STUN,
     ],
     [
-      new MonsterReward(ItemDATA.ITEM_628, [
+      new MonsterReward(ItemDATA.ITEM_628.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 49),
       ]),
-      new MonsterReward(ItemDATA.ITEM_630, [
+      new MonsterReward(ItemDATA.ITEM_630.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 36),
       ]),
-      new MonsterReward(ItemDATA.ITEM_634, [
+      new MonsterReward(ItemDATA.ITEM_634.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 20),
       ]),
-      new MonsterReward(ItemDATA.ITEM_632, [
+      new MonsterReward(ItemDATA.ITEM_632.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 44),
       ]),
-      new MonsterReward(ItemDATA.ITEM_418, [
+      new MonsterReward(ItemDATA.ITEM_418.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 14),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1006, [
+      new MonsterReward(ItemDATA.ITEM_1006.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 50),
         new MonsterRewardCondition(Rank.HIGH, 1, 30),
         new MonsterRewardCondition(Rank.MASTER, 1, 20),
       ]),
-      new MonsterReward(ItemDATA.ITEM_629, [
+      new MonsterReward(ItemDATA.ITEM_629.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 41),
       ]),
-      new MonsterReward(ItemDATA.ITEM_631, [
+      new MonsterReward(ItemDATA.ITEM_631.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 43),
       ]),
-      new MonsterReward(ItemDATA.ITEM_635, [
+      new MonsterReward(ItemDATA.ITEM_635.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 19),
       ]),
-      new MonsterReward(ItemDATA.ITEM_633, [
+      new MonsterReward(ItemDATA.ITEM_633.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 44),
       ]),
-      new MonsterReward(ItemDATA.ITEM_420, [
+      new MonsterReward(ItemDATA.ITEM_420.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 12),
       ]),
-      new MonsterReward(ItemDATA.ITEM_426, [
+      new MonsterReward(ItemDATA.ITEM_426.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 2),
         new MonsterRewardCondition(Rank.MASTER, 1, 6),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1007, [
+      new MonsterReward(ItemDATA.ITEM_1007.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 20),
         new MonsterRewardCondition(Rank.MASTER, 1, 30),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2272, [
+      new MonsterReward(ItemDATA.ITEM_2272.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 42),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2273, [
+      new MonsterReward(ItemDATA.ITEM_2273.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 42),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2275, [
+      new MonsterReward(ItemDATA.ITEM_2275.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 19),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2274, [
+      new MonsterReward(ItemDATA.ITEM_2274.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 45),
       ]),
-      new MonsterReward(ItemDATA.ITEM_422, [
+      new MonsterReward(ItemDATA.ITEM_422.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 2, 10),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2380, [
+      new MonsterReward(ItemDATA.ITEM_2380.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 2),
       ]),
     ],
@@ -1288,54 +1288,54 @@ export namespace MonsterDATA {
       ElementType.STUN,
     ],
     [
-      new MonsterReward(ItemDATA.ITEM_622, [
+      new MonsterReward(ItemDATA.ITEM_622.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 39),
       ]),
-      new MonsterReward(ItemDATA.ITEM_621, [
+      new MonsterReward(ItemDATA.ITEM_621.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 46),
       ]),
-      new MonsterReward(ItemDATA.ITEM_623, [
+      new MonsterReward(ItemDATA.ITEM_623.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 19),
       ]),
-      new MonsterReward(ItemDATA.ITEM_624, [
+      new MonsterReward(ItemDATA.ITEM_624.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 36),
       ]),
-      new MonsterReward(ItemDATA.ITEM_421, [
+      new MonsterReward(ItemDATA.ITEM_421.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 12),
       ]),
-      new MonsterReward(ItemDATA.ITEM_451, [
+      new MonsterReward(ItemDATA.ITEM_451.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 16),
       ]),
-      new MonsterReward(ItemDATA.ITEM_427, [
+      new MonsterReward(ItemDATA.ITEM_427.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 2),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1006, [
+      new MonsterReward(ItemDATA.ITEM_1006.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 25),
         new MonsterRewardCondition(Rank.MASTER, 1, 15),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1007, [
+      new MonsterReward(ItemDATA.ITEM_1007.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 25),
         new MonsterRewardCondition(Rank.MASTER, 1, 35),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2277, [
+      new MonsterReward(ItemDATA.ITEM_2277.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 39),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2276, [
+      new MonsterReward(ItemDATA.ITEM_2276.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 46),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2278, [
+      new MonsterReward(ItemDATA.ITEM_2278.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 19),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2279, [
+      new MonsterReward(ItemDATA.ITEM_2279.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 36),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2360, [
+      new MonsterReward(ItemDATA.ITEM_2360.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 12),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2378, [
+      new MonsterReward(ItemDATA.ITEM_2378.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 16),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2381, [
+      new MonsterReward(ItemDATA.ITEM_2381.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 1),
       ]),
     ],
@@ -1365,71 +1365,71 @@ export namespace MonsterDATA {
       ElementType.STUN,
     ],
     [
-      new MonsterReward(ItemDATA.ITEM_614, [
+      new MonsterReward(ItemDATA.ITEM_614.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 30),
       ]),
-      new MonsterReward(ItemDATA.ITEM_612, [
+      new MonsterReward(ItemDATA.ITEM_612.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 39),
       ]),
-      new MonsterReward(ItemDATA.ITEM_616, [
+      new MonsterReward(ItemDATA.ITEM_616.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 21),
         new MonsterRewardCondition(Rank.HIGH, 2, 12),
       ]),
-      new MonsterReward(ItemDATA.ITEM_617, [
+      new MonsterReward(ItemDATA.ITEM_617.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 18),
       ]),
-      new MonsterReward(ItemDATA.ITEM_619, [
+      new MonsterReward(ItemDATA.ITEM_619.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 62),
       ]),
-      new MonsterReward(ItemDATA.ITEM_446, [
+      new MonsterReward(ItemDATA.ITEM_446.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 12),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1006, [
+      new MonsterReward(ItemDATA.ITEM_1006.clone(), [
         new MonsterRewardCondition(Rank.LOW, 1, 50),
         new MonsterRewardCondition(Rank.HIGH, 1, 20),
         new MonsterRewardCondition(Rank.MASTER, 1, 15),
       ]),
-      new MonsterReward(ItemDATA.ITEM_615, [
+      new MonsterReward(ItemDATA.ITEM_615.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 31),
       ]),
-      new MonsterReward(ItemDATA.ITEM_613, [
+      new MonsterReward(ItemDATA.ITEM_613.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 41),
       ]),
-      new MonsterReward(ItemDATA.ITEM_618, [
+      new MonsterReward(ItemDATA.ITEM_618.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 20),
       ]),
-      new MonsterReward(ItemDATA.ITEM_620, [
+      new MonsterReward(ItemDATA.ITEM_620.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 62),
       ]),
-      new MonsterReward(ItemDATA.ITEM_447, [
+      new MonsterReward(ItemDATA.ITEM_447.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 14),
       ]),
-      new MonsterReward(ItemDATA.ITEM_427, [
+      new MonsterReward(ItemDATA.ITEM_427.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 1),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1007, [
+      new MonsterReward(ItemDATA.ITEM_1007.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 30),
         new MonsterRewardCondition(Rank.MASTER, 1, 35),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2281, [
+      new MonsterReward(ItemDATA.ITEM_2281.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 30),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2280, [
+      new MonsterReward(ItemDATA.ITEM_2280.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 39),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2283, [
+      new MonsterReward(ItemDATA.ITEM_2283.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 18),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2284, [
+      new MonsterReward(ItemDATA.ITEM_2284.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 62),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2376, [
+      new MonsterReward(ItemDATA.ITEM_2376.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 14),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2381, [
+      new MonsterReward(ItemDATA.ITEM_2381.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 1),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2282, [
+      new MonsterReward(ItemDATA.ITEM_2282.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 21),
       ]),
     ],
@@ -1459,51 +1459,51 @@ export namespace MonsterDATA {
       ElementType.STUN,
     ],
     [
-      new MonsterReward(ItemDATA.ITEM_650, [
+      new MonsterReward(ItemDATA.ITEM_650.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 42),
       ]),
-      new MonsterReward(ItemDATA.ITEM_651, [
+      new MonsterReward(ItemDATA.ITEM_651.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 34),
       ]),
-      new MonsterReward(ItemDATA.ITEM_654, [
+      new MonsterReward(ItemDATA.ITEM_654.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 16),
       ]),
-      new MonsterReward(ItemDATA.ITEM_653, [
+      new MonsterReward(ItemDATA.ITEM_653.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 24),
       ]),
-      new MonsterReward(ItemDATA.ITEM_655, [
+      new MonsterReward(ItemDATA.ITEM_655.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 42),
       ]),
-      new MonsterReward(ItemDATA.ITEM_656, [
+      new MonsterReward(ItemDATA.ITEM_656.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 1),
         new MonsterRewardCondition(Rank.MASTER, 1, 4),
       ]),
-      new MonsterReward(ItemDATA.ITEM_652, [
+      new MonsterReward(ItemDATA.ITEM_652.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 41),
       ]),
-      new MonsterReward(ItemDATA.ITEM_1007, [
+      new MonsterReward(ItemDATA.ITEM_1007.clone(), [
         new MonsterRewardCondition(Rank.HIGH, 1, 50),
         new MonsterRewardCondition(Rank.MASTER, 1, 50),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2289, [
+      new MonsterReward(ItemDATA.ITEM_2289.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 42),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2285, [
+      new MonsterReward(ItemDATA.ITEM_2285.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 34),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2290, [
+      new MonsterReward(ItemDATA.ITEM_2290.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 16),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2286, [
+      new MonsterReward(ItemDATA.ITEM_2286.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 24),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2287, [
+      new MonsterReward(ItemDATA.ITEM_2287.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 42),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2295, [
+      new MonsterReward(ItemDATA.ITEM_2295.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 1),
       ]),
-      new MonsterReward(ItemDATA.ITEM_2291, [
+      new MonsterReward(ItemDATA.ITEM_2291.clone(), [
         new MonsterRewardCondition(Rank.MASTER, 1, 41),
       ]),
     ],

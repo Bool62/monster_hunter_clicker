@@ -25,6 +25,17 @@ export class Item {
   get id(): number {
     return this._id;
   }
+
+  clone(): Item {
+    return new Item(
+      this._id,
+      this._name,
+      this._description,
+      this._rarity,
+      this._value,
+      this._icon
+    );
+  }
 }
 
 export class ItemInventory {

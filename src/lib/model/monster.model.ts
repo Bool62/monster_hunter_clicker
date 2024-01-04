@@ -189,4 +189,23 @@ export class Monster {
   get id(): number {
     return this._id;
   }
+
+
+  clone(): Monster {
+    return new Monster(
+      this._id,
+      this._name,
+      this._description,
+      this._type,
+      this._species,
+      [...this._resistances],
+      [...this._weakness],
+      [...this._rewards],
+      this._healthLow,
+      this._healthHigh,
+      this._healthMaster,
+      this._rank,
+      this._assets
+    );
+  }
 }
