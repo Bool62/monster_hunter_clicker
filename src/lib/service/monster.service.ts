@@ -12,7 +12,7 @@ export class MonsterService {
   getMonsters() {
     this.httpClient.get("https://mhw-db.com/monsters").subscribe((items) => {
       let output = '';
-      console.log(items);
+      //console.log(items);
 
       (<any[]>items).forEach((item) => {
         const typeMapped: MonsterType | undefined = enumFromStringValue(
@@ -63,7 +63,7 @@ export class MonsterService {
             Rank.LOW,
             ""
           );
-          console.log(monster);
+          //console.log(monster);
           output = output + '\n const monster_' + item.id + `= new Monster( ${item.id}, "${item.name}", "${item.description}",
             "${typeMapped}", "${specieMapped}", [${resistancesMapped}], [${weaknessesMapped}],
             [], // TODO reward from other referential, 

@@ -51,7 +51,7 @@ export class ItemState {
 
   static ItemById(id: number) {
     return createSelector([ItemState], (state: ItemStateModel) => {
-      return state.items.get(id);
+      return state.items.get(id)?.clone;
     });
   }
 }

@@ -9,6 +9,7 @@ import { MonsterAction } from "../store/monster.action";
 import { ItemAction } from "../store/item.action";
 import { MonsterService } from "../../lib/service/monster.service";
 import { HttpClientModule } from "@angular/common/http";
+import { QuestAction } from "../store/quest.action";
 
 @Component({
   selector: "app-game",
@@ -32,6 +33,12 @@ export class GameComponent implements OnInit {
   ngOnInit() {
     this.store.dispatch(new MonsterAction.LoadInit());
     this.store.dispatch(new ItemAction.LoadInit());
+    this.store.dispatch(new QuestAction.LoadInit());
+
+    //Mock
+    this.store.dispatch(
+      new ClickerGameActions.StartCollectQuest({ idQuest: 1 })
+    );
 
     this.monsterService.getMonsters();
   }
