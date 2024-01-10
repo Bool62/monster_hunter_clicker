@@ -10,7 +10,7 @@ import {
 import { Rank } from "./rank.model";
 
 export namespace MonsterDATA {
-  const MONSTER_001 = new Monster(
+  export const MONSTER_001 = new Monster(
     1,
     "Rathian",
     'A wyvern known as the "Queen of the Land." Terrestrial predator, it overpowers its prey with a venomous tail and powerful legs.',
@@ -126,7 +126,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_002 = new Monster(
+  export const MONSTER_002 = new Monster(
     2,
     "Rathalos",
     'The apex monster of the Ancient Forest, also known as the "King of the Skies". A fierce wyvern that descends upon invaders, attacking with its venomous claws and fiery breath.',
@@ -270,7 +270,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_005 = new Monster(
+  export const MONSTER_005 = new Monster(
     5,
     "Hornetaur",
     "Small insects that are found primarily on land. They're highly territorial and will attack anything that approaches them. Gather their materials by attacking them with the slinger.",
@@ -299,7 +299,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_006 = new Monster(
+  export const MONSTER_006 = new Monster(
     6,
     "Vespoid",
     "Insects that paralyze their targets with their long stingers. They break easily, so attack them with poison or slinger ammo if you want to carve them.",
@@ -315,7 +315,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_007 = new Monster(
+  export const MONSTER_007 = new Monster(
     7,
     "Diablos",
     "The apex monster of the Wildspire Waste. A menacing, territorial beast that lurks underground. Loud noises will cause it to lunge out of the sand in search of prey.",
@@ -407,7 +407,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_024 = new Monster(
+  export const MONSTER_024 = new Monster(
     24,
     "Kushala Daora",
     "An elder dragon that shields itself with fierce winds, preventing anyone from approaching it. Its skin consists of hard, metallic scales.",
@@ -489,7 +489,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_025 = new Monster(
+  export const MONSTER_025 = new Monster(
     25,
     "Rajang",
     "An ultra-aggressive creature that few have a chance of surviving against. Sports powerful arms that pack a punch, and turns gold when angry.",
@@ -570,7 +570,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_027 = new Monster(
+  export const MONSTER_027 = new Monster(
     27,
     "Teostra",
     "A brutal elder dragon wreathed in flames that spits blazing fire. Teostra are of such a fierce and deadly nature that the Guild closely monitors their movements.",
@@ -661,7 +661,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_029 = new Monster(
+  export const MONSTER_029 = new Monster(
     29,
     "Gajau",
     "Vicious piscine that form groups to defend their territory from intruders. Be sure not to venture too closely to their habitat!",
@@ -677,7 +677,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_044 = new Monster(
+  export const MONSTER_044 = new Monster(
     44,
     "Barroth",
     "Barroth seek out ants, their favorite snack, and mark their territory with mud. They attack potential rivals with their devastating charging attack.",
@@ -776,7 +776,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_049 = new Monster(
+  export const MONSTER_049 = new Monster(
     49,
     "Jagras",
     "Members of the Great Jagras pack, these smaller monsters will flee upon seeing one of their own perish. They're also known for ambushing larger monsters at a moment's notice.",
@@ -792,7 +792,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_051 = new Monster(
+  export const MONSTER_051 = new Monster(
     51,
     "Kestodon",
     "Female Kestodon will alert the pack of danger, while the males will violently charge would-be threats. Their rushing charges can be blocked, however, leaving them open to attacks.",
@@ -808,7 +808,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_057 = new Monster(
+  export const MONSTER_057 = new Monster(
     57,
     "Zinogre",
     "Lightning courses through the fur and unique plating of this fanged wyvern. It is most deadly in its supercharged state.",
@@ -902,7 +902,53 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_098 = new Monster(
+  export const MONSTER_091 = new Monster(
+    91,
+    "Izuchi",
+    "An omnivorous bird wyvern that has a characteristic scythe-shaped tail. It uses this tail to attack, but also to climb trees and chop down fruit. Most Izuchi fall into herds led by a Great Izuchi; in each herd, the two best fighters are selected by the leader to help it hunt prey.",
+    MonsterType.SMALL,
+    MonsterSpecies.BIRD_WYNVERN,
+    [ElementType.DRAGON],
+    [ElementType.WATER, ElementType.THUNDER],
+    [
+      new MonsterReward(ItemDATA.ITEM_525.clone(), [
+        new MonsterRewardCondition(Rank.LOW, 1, 52),
+        new MonsterRewardCondition(Rank.HIGH, 1, 52),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_525.clone(), [
+        new MonsterRewardCondition(Rank.LOW, 1, 34),
+        new MonsterRewardCondition(Rank.HIGH, 1, 34),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_524.clone(), [
+        new MonsterRewardCondition(Rank.LOW, 1, 33),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_526.clone(), [
+        new MonsterRewardCondition(Rank.HIGH, 1, 53),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2354.clone(), [
+        new MonsterRewardCondition(Rank.MASTER, 1, 53),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_431.clone(), [
+        new MonsterRewardCondition(Rank.LOW, 1, 15),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_433.clone(), [
+        new MonsterRewardCondition(Rank.HIGH, 1, 15),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_2366.clone(), [
+        new MonsterRewardCondition(Rank.MASTER, 1, 15),
+      ]),
+      new MonsterReward(ItemDATA.ITEM_525.clone(), [
+        new MonsterRewardCondition(Rank.LOW, 1, 38),
+      ]),
+    ],
+    3000,
+    3000,
+    3000,
+    Rank.LOW,
+    ""
+  );
+
+  export const MONSTER_098 = new Monster(
     98,
     "Great Izuchi",
     "The alpha Izuchi of its pack, identified by its larger build, upended white fur and scythe-like tail. A Great Izuchi forms a herd of many smaller Izuchi and selects two from the group to accompany it on territory patrols. Once it spots prey or senses danger, the Great Izuchi issues commands to their fellow Izuchi, and coordinates their movements. Take care that you don't get overwhelmed.",
@@ -976,7 +1022,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_100 = new Monster(
+  export const MONSTER_100 = new Monster(
     100,
     "Anjanath",
     "The Anjanath patrols the Ancient Forest, looking for its favorite meal, Aptonoth. This belligerent monster will attack anything without hesitation.",
@@ -1075,7 +1121,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_102 = new Monster(
+  export const MONSTER_102 = new Monster(
     102,
     "Pukei-Pukei",
     "A bird wyvern known to possess poisonous toxins in its body. It's been spotted storing scatternuts in its mouth or tail, coating them with poison and spitting them out at threats.",
@@ -1179,7 +1225,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_107 = new Monster(
+  export const MONSTER_107 = new Monster(
     107,
     "Kulu-Ya-Ku",
     "An odd bird wyvern that has developed limbs capable of carrying weapons. It's been spotted stealing eggs from nests found in the Ancient Forest and Wildspire Waste.",
@@ -1268,7 +1314,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_108 = new Monster(
+  export const MONSTER_108 = new Monster(
     108,
     "Jyuratodus",
     "A large piscine wyvern that inhabits the swamps of the Wildspire Waste. It uses mud to capture prey, and it's known to battle Barroth over territory.",
@@ -1346,7 +1392,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_109 = new Monster(
+  export const MONSTER_109 = new Monster(
     109,
     "Tobi-Kadachi",
     "A fanged wyvern that flies among the trees of the Ancient Forest. Its penchant to brush against the ground and the trees as it moves around builds up static electricity within its fur.",
@@ -1440,7 +1486,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const MONSTER_118 = new Monster(
+  export const MONSTER_118 = new Monster(
     118,
     "Bazelgeuse",
     "A nefarious flying wyvern that travels the New World in search of prey. It scatters explosive scales over a wide area to prey on whatever gets caught in the blast.",
@@ -1520,7 +1566,7 @@ export namespace MonsterDATA {
 
   //////
 
-  const monster_1 = new Monster(
+  export const monster_1 = new Monster(
     1,
     "Aptonoth",
     "Docile herbivores that graze in packs. Their meat is considered a delicacy and is rich in nutrients. If one member of the herd is attacked, the rest will flee immediately.",
@@ -1536,7 +1582,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_3 = new Monster(
+  export const monster_3 = new Monster(
     3,
     "Mernos",
     "Wingdrakes that feast on scatternuts. The flock will travel great distances when startled, making them an invaluable mode of transportation for clever hunters.",
@@ -1552,7 +1598,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_5 = new Monster(
+  export const monster_5 = new Monster(
     5,
     "Mosswine",
     "Mosswine are known for their excellent sense of smell, and are often found foraging for fungi. If you're hunting for mushrooms, follow the Mosswine to the motherlode.",
@@ -1568,7 +1614,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_6 = new Monster(
+  export const monster_6 = new Monster(
     6,
     "Apceros",
     "Herbivores that inhabit the Wildspire Waste. They've developed particularly hard hide to ward off attackers, and are known to gather in groups to defend themselves.",
@@ -1584,7 +1630,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_8 = new Monster(
+  export const monster_8 = new Monster(
     8,
     "Noios",
     "Wingdrakes that produce a sound similar to screamer pods when startled. Use meat to get their attention, and then hunt them for materials, or use them for transportation.",
@@ -1600,7 +1646,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_11 = new Monster(
+  export const monster_11 = new Monster(
     11,
     "Raphinos",
     "Wingdrakes inhabiting the Coral Highlands. They group up to steal the eggs of other animals, but this in turn exposes them to the attention of larger, more vicious predators.",
@@ -1616,7 +1662,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_12 = new Monster(
+  export const monster_12 = new Monster(
     12,
     "Shamos",
     "Small nocturnal monsters. They're particularly vulnerable to Tzitzi-Ya-Ku's blinding flash, but have been known to gang up on enemies.",
@@ -1632,7 +1678,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_13 = new Monster(
+  export const monster_13 = new Monster(
     13,
     "Girros",
     "Monsters known to attack in packs, using the deadly vapor of the Rotten Vale to their advantage. They're known for crippling targets with paralyzing fangs.",
@@ -1648,7 +1694,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_15 = new Monster(
+  export const monster_15 = new Monster(
     15,
     "Gastodon",
     "Pack monsters that inhabit the Elder's Recess. They are easily angered by intruders, and will charge at monsters twice their size.",
@@ -1664,7 +1710,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_16 = new Monster(
+  export const monster_16 = new Monster(
     16,
     "Barnos",
     "Fervid wingdrakes that have flourished under harsh living conditions. They target intruders with a unique acidic agent, and then attack as a swarm.",
@@ -1680,7 +1726,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_17 = new Monster(
+  export const monster_17 = new Monster(
     17,
     "Great Jagras",
     "The pack leader of the Jagras. When hungry, Great Jagras are known to attack monsters even stronger than themselves. It balloons to unbelievable proportions after swallowing prey.",
@@ -1706,7 +1752,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_24 = new Monster(
+  export const monster_24 = new Monster(
     24,
     "Azure Rathalos",
     "An azure-colored subspecies of Rathalos. More mobile than their standard cousins, they locate prey from the air and quickly swoop in for the kill.",
@@ -1732,7 +1778,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_26 = new Monster(
+  export const monster_26 = new Monster(
     26,
     "Behemoth",
     "A powerful beast from another world. Its large horns and muscular frame defy nature. Unique strategies are required to battle it.",
@@ -1759,10 +1805,10 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_27 = new Monster(
+  export const monster_27 = new Monster(
     27,
     "Deviljho",
-    "A monster that must feed constantly and will devour anything in its path, even feeding on the largest of monsters with its massive jowls.",
+    "A monster that must feed export constantly and will devour anything in its path, even feeding on the largest of monsters with its massive jowls.",
     MonsterType.LARGE,
     MonsterSpecies.BRUTE_WYVERN,
     [],
@@ -1786,7 +1832,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_29 = new Monster(
+  export const monster_29 = new Monster(
     29,
     "Black Diablos",
     "These black-shelled Diablos are actually female Diablos in heat. The color signals their aggressiveness and heightened hostility to other creatures in their habitat.",
@@ -1811,7 +1857,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_30 = new Monster(
+  export const monster_30 = new Monster(
     30,
     "Dodogama",
     "A monster that devours rock as its primary diet. The Crystals it devours mix with its saliva to produce explosive minerals that it can spit at its enemies.",
@@ -1837,7 +1883,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_31 = new Monster(
+  export const monster_31 = new Monster(
     31,
     "Great Girros",
     "A monster that scavenges for meals dropped from the Coral Highlands. It acts as the alpha leader of a Girros pack, and sports giant fangs that paralyze its prey.",
@@ -1863,7 +1909,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_32 = new Monster(
+  export const monster_32 = new Monster(
     32,
     "Kirin",
     "Kirin are so rarely sighted that little is known of their ecology. It's been said they envelop themselves in pure electricity when they are provoked.The lightning a Kirin cloaks itself with has been confirmed to toughen its skin. The key to hunting a Kirin lies in staggering it, using Elderseal weapons, and protecting yourself from and avoiding its lightning attacks.",
@@ -1888,7 +1934,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_33 = new Monster(
+  export const monster_33 = new Monster(
     33,
     "Kulve Taroth",
     "An Elder Dragon that protects itself with a glittering coat of metal. Its ecology and coat differ with each appearance, thus the need for a thorough investigation. An exhaustive investigation is required in order to break Kulve Taroth's giant gold plated horns. Pursue the monster to learn more about it. Gather tracks and recruit hunters to help you further your investigation.",
@@ -1916,7 +1962,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_35 = new Monster(
+  export const monster_35 = new Monster(
     35,
     "Lavasioth",
     "Lavasioth utilizes molten lava as armor. They are extremely aggressive and will attack without prejudice until the threat has been eliminated.",
@@ -1944,7 +1990,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_36 = new Monster(
+  export const monster_36 = new Monster(
     36,
     "Legiana",
     "The apex monster of the Coral Highlands, whose diet primarily consists of Raphinos. It emits a chilling wind from its body, which dulls its prey's ability to escape.",
@@ -1970,7 +2016,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_37 = new Monster(
+  export const monster_37 = new Monster(
     37,
     "Lunastra",
     "A rare female Elder Dragon that litters the air with hot blue dust. Reports of it traveling with her mate, Teostra, are still unconfirmed.",
@@ -1996,7 +2042,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_38 = new Monster(
+  export const monster_38 = new Monster(
     38,
     "Nergigante",
     "A terrible elder dragon that appears when other elders are in the vicinity. Its penchant for destruction is well documented.",
@@ -2023,7 +2069,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_39 = new Monster(
+  export const monster_39 = new Monster(
     39,
     "Odogaron",
     "A terrifying monster that scours the Rotten Vale for carrion. Its highly aggressive nature means that anything, be it monster or man, is a potential meal.",
@@ -2049,7 +2095,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_40 = new Monster(
+  export const monster_40 = new Monster(
     40,
     "Paolumu",
     "Paolumu feast on eggs found in the Coral Highlands. They are able to propel through the air using unique sacs in their bodies, and attack with their extremely hard tails.",
@@ -2075,7 +2121,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_41 = new Monster(
+  export const monster_41 = new Monster(
     41,
     "Radobaan",
     "A gigantic brute wyvern that eats the bones of carcasses found in the Rotten Vale, using some of it as armor. It also rolls into a ball as a form of attack and transportation.",
@@ -2102,7 +2148,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_44 = new Monster(
+  export const monster_44 = new Monster(
     44,
     "Pink Rathian",
     "A subspecies with vibrant pink scales. Pink Rathians wield their toxic tails more deftly than normal Rathians, weakening prey with poison before moving in for the kill.",
@@ -2128,7 +2174,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_48 = new Monster(
+  export const monster_48 = new Monster(
     48,
     "Tzitzi-Ya-Ku",
     "This odd monster blinds both prey and enemies with a special pulsing organ near its head. It then uses its strong legs to deliver finishing blows.",
@@ -2155,7 +2201,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_49 = new Monster(
+  export const monster_49 = new Monster(
     49,
     "Uragaan",
     "Large Brute Wyverns that feed on ore, using their mighty jaws to crush solid rock to powder. They've been known to confront Lavasioths over territory disputes.",
@@ -2181,7 +2227,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_50 = new Monster(
+  export const monster_50 = new Monster(
     50,
     "Vaal Hazak",
     "A grotesque Elder Dragon, that inhabits the deepest part of the Rotten Vale. It uses the fatal vapor of the vale in what appears to be a symbiotic relationship.",
@@ -2207,7 +2253,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_51 = new Monster(
+  export const monster_51 = new Monster(
     51,
     "Xeno'jiiva",
     "RESEARCHING. Threat level unknown.",
@@ -2233,7 +2279,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_52 = new Monster(
+  export const monster_52 = new Monster(
     52,
     "Zorah Magdaros",
     "An elder dragon that rises from the earth like a volcano. Where it's headed, and why, the Research Commission has yet to figure out.",
@@ -2260,7 +2306,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_53 = new Monster(
+  export const monster_53 = new Monster(
     53,
     "Leshen",
     "Dwelling deep inside the forest, these creatures use their innate magic to control all flora and fauna within their territory.",
@@ -2285,7 +2331,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_54 = new Monster(
+  export const monster_54 = new Monster(
     54,
     "Ancient Leshen",
     "An old leshen that arrived through a portal to assume control over the Ancient Forest. Sometimes revered as an indigenous deity.",
@@ -2310,7 +2356,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_55 = new Monster(
+  export const monster_55 = new Monster(
     55,
     "Safi'jiiva",
     "The fully-grown form of Xeno'jiiva. It absorbs energy from its environment to heal itself and change the ecosystem.",
@@ -2333,7 +2379,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_56 = new Monster(
+  export const monster_56 = new Monster(
     56,
     "Stygian Zinogre",
     "Has a symbiotic relationship with Dracophage Bugs, which it releases like bullets. Becomes even more dangerous when covered in light.",
@@ -2349,7 +2395,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_58 = new Monster(
+  export const monster_58 = new Monster(
     58,
     "Viper Tobi-Kadachi",
     "The tail of this subspecies secretes a toxin while its fangs paralyze prey. It can also glide without climbing trees.",
@@ -2375,7 +2421,7 @@ export namespace MonsterDATA {
     ""
   );
 
-  const monster_59 = new Monster(
+  export const monster_59 = new Monster(
     59,
     "Namielle",
     "An Elder Dragon said to be able to command water and use it as a shield. Though very few sightings have ever been reported, they mention 'exploding water' and 'bright glowing lights.' Its existence remains shrouded in mystery.",

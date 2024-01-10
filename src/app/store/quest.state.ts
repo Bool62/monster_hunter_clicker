@@ -36,8 +36,14 @@ export class QuestState {
       questCollect.set(quest.id, quest);
     });
 
+    const questCombat: Map<number, QuestCombat> = new Map();
+    QuestDATA.QUEST_ALL_COMBAT.forEach((quest) => {
+      questCombat.set(quest.id, quest);
+    });
+
     ctx.patchState({
       questCollect: questCollect,
+      questCombat: questCombat,
     });
   }
 
@@ -54,6 +60,22 @@ export class QuestState {
   static questCollectById(id: number) {
     return createSelector([QuestState], (state: QuestStateModel) => {
       return state.questCollect.get(id)?.clone();
+    });
+  }
+
+  @Selector()
+  static questCombat(state: QuestStateModel): Map<number, QuestCombat> {
+    return state.questCombat;
+  }
+
+  @Selector()
+  static questCombatArray(state: QuestStateModel): QuestCombat[] {
+    return Array.from(state.questCombat.values());
+  }
+
+  static questCombatById(id: number) {
+    return createSelector([QuestState], (state: QuestStateModel) => {
+      return state.questCombat.get(id)?.clone();
     });
   }
 }
