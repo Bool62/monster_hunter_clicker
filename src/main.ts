@@ -18,12 +18,44 @@ import { QuestMenuComponent } from "./app/quest/questMenu/questMenu.component";
 import { ItemAction } from "./app/store/item.action";
 import { MonsterAction } from "./app/store/monster.action";
 import { QuestAction } from "./app/store/quest.action";
+import { provideAnimations } from "@angular/platform-browser/animations";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatIconModule } from "@angular/material/icon";
 
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [GameComponent, RouterOutlet],
-  template: ` <router-outlet></router-outlet> `,
+  imports: [GameComponent, RouterOutlet, MatToolbarModule, MatIconModule],
+  template: `
+    <p>
+      <mat-toolbar color="primary">
+        <button
+          mat-icon-button
+          class="example-icon"
+          aria-label="Example icon-button with menu icon"
+        >
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>My App</span>
+        <span class="example-spacer"></span>
+        <button
+          mat-icon-button
+          class="example-icon favorite-icon"
+          aria-label="Example icon-button with heart icon"
+        >
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button
+          mat-icon-button
+          class="example-icon"
+          aria-label="Example icon-button with share icon"
+        >
+          <mat-icon>share</mat-icon>
+        </button>
+      </mat-toolbar>
+    </p>
+    <router-outlet></router-outlet>
+  `,
 })
 export class App {
   name = "Angular";
@@ -57,5 +89,6 @@ bootstrapApplication(App, {
     importProvidersFrom(NgxsLoggerPluginModule.forRoot()),
     provideHttpClient(),
     provideRouter(appRoutes),
+    provideAnimations(),
   ],
 });
