@@ -143,6 +143,23 @@ export class ClickerGameState {
     return state.currentCombatQuest;
   }
 
+  @Selector()
+  static character(state: ClickerGameStateModel): Character {
+    return state.character;
+  }
+
+  @Selector()
+  static inventoryItem(
+    state: ClickerGameStateModel
+  ): Map<number, ItemInventory> {
+    return state.character.inventoryItem;
+  }
+
+  @Selector()
+  static inventoryItemArray(state: ClickerGameStateModel): ItemInventory[] {
+    return Array.from(state.character.inventoryItem.values());
+  }
+
   private spawnNextMonster(): Monster | undefined {
     const monster = this.store.selectSnapshot(MonsterState.monsterById(3));
     monster?.updateRankMonster(Rank.LOW);

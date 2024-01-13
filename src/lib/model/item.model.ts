@@ -1,10 +1,10 @@
 export class Item {
   private _id: number = 0;
-  private _name: string = '';
-  private _description: string = '';
+  private _name: string = "";
+  private _description: string = "";
   private _rarity: number = 0;
   private _value: number = 0;
-  private _icon: string = '';
+  private _icon: string = "";
 
   constructor(
     id: number,
@@ -26,6 +26,26 @@ export class Item {
     return this._id;
   }
 
+  get name(): string {
+    return this._name;
+  }
+
+  get description(): string {
+    return this._description;
+  }
+
+  get rarity(): number {
+    return this._rarity;
+  }
+
+  get value(): number {
+    return this._value;
+  }
+
+  get icon(): string {
+    return this._icon;
+  }
+
   clone(): Item {
     return new Item(
       this._id,
@@ -39,23 +59,23 @@ export class Item {
 }
 
 export class ItemInventory {
-  private _item!: Item
+  private _item!: Item;
   private _quantity: number = 0;
 
   constructor(item: Item, quantity: number) {
     this._item = item;
     this._quantity = quantity;
-    }
+  }
 
   get item(): Item {
     return this._item;
   }
 
   get quantity(): number {
-    return this._quantity
+    return this._quantity;
   }
 
   set quantity(quantity: number) {
     this._quantity = quantity;
-  }  
+  }
 }

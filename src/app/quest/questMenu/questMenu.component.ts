@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component, type OnInit } from "@angular/core";
-import { Store } from "@ngxs/store";
+import { Select, Store } from "@ngxs/store";
 import { ClickerGameState } from "../../store/clickerGame.state";
 import { Observable, of } from "rxjs";
 import { QuestCollect, QuestCombat } from "../../../lib/model/quest.model";
@@ -19,28 +19,22 @@ import { ConfirmDialogComponent } from "../../shared/components/confirmDialog/co
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class QuestMenuComponent implements OnInit {
+  @Select(ClickerGameState.currentCollectQuest)
   currentCollectQuest$!: Observable<QuestCollect | undefined>;
+  @Select(ClickerGameState.currentCombatQuest)
   currentCombatQuest$!: Observable<QuestCombat | undefined>;
 
-  questsCollect$: Observable<QuestCollect[]> = of([]);
-  questsCombats$: Observable<QuestCombat[]> = of([]);
+  @Select(QuestState.questCollectArray)
+  questsCollect$!: Observable<QuestCollect[]>;
+  @Select(QuestState.questCombatArray)
+  questsCombats$!: Observable<QuestCombat[]>;
 
   constructor(
     private readonly store: Store,
     private readonly dialog: MatDialog
   ) {}
 
-  ngOnInit(): void {
-    this.currentCollectQuest$ = this.store.select(
-      ClickerGameState.currentCollectQuest
-    );
-    this.currentCombatQuest$ = this.store.select(
-      ClickerGameState.currentCombatQuest
-    );
-
-    this.questsCollect$ = this.store.select(QuestState.questCollectArray);
-    this.questsCombats$ = this.store.select(QuestState.questCombatArray);
-  }
+  ngOnInit(): void {}
 
   startQuestCollect(id: number) {
     const currentCollectQuest = this.store.selectSnapshot(

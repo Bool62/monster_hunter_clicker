@@ -1,1 +1,7 @@
-<p>inventoryMenu works!</p>,
+<h1>Actual inventory</h1>
+
+@for (item of inventoryItemArray$ | async; track item.item.id) {
+<div>
+  <span> {{ item.item.name }} - {{item.item.description}} - {{ item.quantity }}</span>
+</div>
+}
