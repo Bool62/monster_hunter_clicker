@@ -1,1 +1,32 @@
-<p>questMenu works!</p>,
+<h1>Actual Quest</h1>
+
+@if ((currentCollectQuest$ | async) || (currentCombatQuest$ | async)) { @if
+(currentCollectQuest$ | async; as currentCollectQuest) {
+<h2>Current collect quest</h2>
+<span>{{ currentCollectQuest.title }}</span>
+} @if (currentCombatQuest$ | async; as currentCombatQuest) {
+<h2>Current combat quest</h2>
+<span>{{ currentCombatQuest.title }}</span>
+}
+<span>Quest </span>
+} @else {
+<span>No quest running</span>
+}
+
+<h1>Listing Quests available</h1>
+
+<h2>Quests collects</h2>
+@for (questCollect of questsCollect$ | async; track questCollect.id) {
+<div>
+  <span>{{ questCollect.title }}</span>
+  <button mat-button color="primary" (click)="startQuestCollect(questCollect.id)">Start</button>
+</div>
+}
+
+<h2>Quests combats</h2>
+@for (questCombat of questsCombats$ | async; track questCombat.id) {
+<div>
+  <span>{{ questCombat.title }}</span>
+  <button mat-button color="primary" (click)="startQuestCombat(questCombat.id)">Start</button>
+</div>
+}

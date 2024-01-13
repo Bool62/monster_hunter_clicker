@@ -89,7 +89,6 @@ export class ClickerGameState {
     }
   }
 
-  // Définissez les actions pour mettre à jour l'état du personnage
   @Action(ClickerGameActions.StartCollectQuest)
   startCollectQuest(
     ctx: StateContext<ClickerGameStateModel>,
@@ -105,6 +104,21 @@ export class ClickerGameState {
     }
   }
 
+  @Action(ClickerGameActions.StartCombatQuest)
+  startCombatQuest(
+    ctx: StateContext<ClickerGameStateModel>,
+    action: ClickerGameActions.StartCombatQuest
+  ) {
+    const quest = this.store.selectSnapshot(
+      QuestState.questCombatById(action.payload.idQuest)
+    );
+    if (quest) {
+      ctx.patchState({
+        currentCombatQuest: quest.clone(),
+      });
+    }
+  }
+
   @Selector()
   static monstersKilled(state: ClickerGameStateModel): number {
     return state.monstersKilled;
@@ -113,6 +127,20 @@ export class ClickerGameState {
   @Selector()
   static currentMonster(state: ClickerGameStateModel): Monster | undefined {
     return state.currentMonster;
+  }
+
+  @Selector()
+  static currentCollectQuest(
+    state: ClickerGameStateModel
+  ): QuestCollect | undefined {
+    return state.currentCollectQuest;
+  }
+
+  @Selector()
+  static currentCombatQuest(
+    state: ClickerGameStateModel
+  ): QuestCombat | undefined {
+    return state.currentCombatQuest;
   }
 
   private spawnNextMonster(): Monster | undefined {

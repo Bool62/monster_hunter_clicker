@@ -9,4 +9,9 @@ export namespace ClickerGameActions {
     static readonly type = '[ClickGame] Start collect quest';
     constructor(public payload: {idQuest: number}) {}
   }
+
+  export class StartCombatQuest {
+    static readonly type = '[ClickGame] Start combat quest';
+    constructor(public payload: {idQuest: number}) {}
+  }
 }
