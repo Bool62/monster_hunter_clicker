@@ -21,40 +21,21 @@ import { QuestAction } from "./app/store/quest.action";
 import { provideAnimations } from "@angular/platform-browser/animations";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
+import { HeaderComponent } from "./app/shared/components/header/header.component";
+import { FooterComponent } from "./app/shared/components/footer/footer.component";
 
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [GameComponent, RouterOutlet, MatToolbarModule, MatIconModule],
+  imports: [
+    HeaderComponent,
+    FooterComponent,
+    MatToolbarModule,
+    MatIconModule,
+  ],
   template: `
-    <p>
-      <mat-toolbar color="primary">
-        <button
-          mat-icon-button
-          class="example-icon"
-          aria-label="Example icon-button with menu icon"
-        >
-          <mat-icon>menu</mat-icon>
-        </button>
-        <span>My App</span>
-        <span class="example-spacer"></span>
-        <button
-          mat-icon-button
-          class="example-icon favorite-icon"
-          aria-label="Example icon-button with heart icon"
-        >
-          <mat-icon>favorite</mat-icon>
-        </button>
-        <button
-          mat-icon-button
-          class="example-icon"
-          aria-label="Example icon-button with share icon"
-        >
-          <mat-icon>share</mat-icon>
-        </button>
-      </mat-toolbar>
-    </p>
-    <router-outlet></router-outlet>
+    <app-header></app-header>
+    <app-footer></app-footer>
   `,
 })
 export class App {

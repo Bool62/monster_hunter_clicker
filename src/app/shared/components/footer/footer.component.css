@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+mat-toolbar {
+  border-radius: 25% 25% 25% 25% / 25% 25% 0% 0%;
+  -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+  -moz-box-shadow: 10px 3px 3px 3px #dddddd;
+  box-shadow: 10px 3px 3px 3px #dddddd;
+}
