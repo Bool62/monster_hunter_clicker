@@ -2,7 +2,7 @@
 
 import { Injectable } from "@angular/core";
 import { State, Action, StateContext, Selector, Store } from "@ngxs/store";
-import { Character } from "../../lib/model/character.model";
+import { Character, Stats } from "../../lib/model/character.model";
 import { MonsterDATA } from "../../lib/model/monster.data";
 import { Monster } from "../../lib/model/monster.model";
 import { ClickerGameActions } from "./clickerGame.action";
@@ -14,7 +14,6 @@ import { QuestState } from "./quest.state";
 
 export interface ClickerGameStateModel {
   character: Character;
-  monstersKilled: number;
   currentMonster?: Monster;
   currentCollectQuest?: QuestCollect;
   currentCombatQuest?: QuestCombat;
@@ -24,7 +23,6 @@ export interface ClickerGameStateModel {
   name: "clickGame",
   defaults: {
     character: new Character(),
-    monstersKilled: 0,
     currentMonster: undefined,
     currentCollectQuest: undefined,
     currentCombatQuest: undefined,
@@ -61,17 +59,38 @@ export class ClickerGameState {
             }
           });
         }
-        // Le monstre actuel est vaincu, passer au suivant
+        // current monster done, load next from quest
+
+        state.character.stats.addMonsterKilled(state.currentMonster.id);
+        const monster = state.currentCombatQuest?.nextMonster();
+
         ctx.patchState({
           character: state.character,
-          monstersKilled: state.monstersKilled + 1,
-          currentMonster: this.spawnNextMonster(),
+          currentMonster: monster,
         });
+
+        if (state.currentCombatQuest?.endQuest) {
+          const rewards = state.currentCombatQuest.generateReward();
+          console.error(rewards);
+          if (rewards && rewards.length > 0) {
+            const inventoryItems = state.character.inventoryItem;
+            rewards.forEach((reward) => {
+              const inventoryItem = inventoryItems.get(reward.id);
+              if (inventoryItem) {
+                inventoryItem.quantity = inventoryItem.quantity + 1;
+              } else {
+                inventoryItems.set(reward.id, new ItemInventory(reward, 1));
+              }
+            });
+            ctx.patchState({
+              character: state.character,
+            });
+          }
+          ctx.patchState({
+            currentCombatQuest: undefined,
+          });
+        }
       }
-    } else {
-      ctx.patchState({
-        currentMonster: this.spawnNextMonster(),
-      });
     }
 
     if (state.currentCollectQuest) {
@@ -115,13 +134,14 @@ export class ClickerGameState {
     if (quest) {
       ctx.patchState({
         currentCombatQuest: quest.clone(),
+        currentMonster: quest.monsterByIndex(0),
       });
     }
   }
 
   @Selector()
-  static monstersKilled(state: ClickerGameStateModel): number {
-    return state.monstersKilled;
+  static stats(state: ClickerGameStateModel): Stats {
+    return state.character.stats;
   }
 
   @Selector()

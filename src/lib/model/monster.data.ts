@@ -941,9 +941,9 @@ export namespace MonsterDATA {
         new MonsterRewardCondition(Rank.LOW, 1, 38),
       ]),
     ],
-    3000,
-    3000,
-    3000,
+    90,
+    90,
+    90,
     Rank.LOW,
     ""
   );
